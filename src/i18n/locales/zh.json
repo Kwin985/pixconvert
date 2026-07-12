@@ -1,0 +1,178 @@
+{
+  "nav": {
+    "webpAvif": "WebP/AVIF",
+    "toJpg": "转 JPG",
+    "toPng": "转 PNG",
+    "toHeic": "转 HEIC",
+    "toSvg": "转 SVG",
+    "compare": "格式对比",
+    "faq": "常见问题"
+  },
+  "header": {
+    "title": "PixConvert"
+  },
+  "footer": {
+    "tagline": "PixConvert - 免费图片格式转换工具",
+    "faq": "常见问题",
+    "github": "GitHub",
+    "madeWith": "Made with",
+    "privacy": "所有图片处理均在浏览器本地完成，不会上传到任何服务器。"
+  },
+  "hero": {
+    "badge": "新一代图片格式转换工具",
+    "title": "图片格式转换，",
+    "highlight": "从未如此简单",
+    "description": "PixConvert 支持 WebP、AVIF 双格式输出，批量转换图片，所有处理均在浏览器本地完成，无需上传，保护你的隐私。",
+    "startConvert": "开始转换",
+    "features": {
+      "dualFormat": "WebP + AVIF 双格式",
+      "localProcessing": "浏览器本地处理，零上传",
+      "batchFree": "批量转换，无限免费"
+    }
+  },
+  "home": {
+    "advantageTitle": "PixConvert 的优势",
+    "advantages": [
+      {
+        "tag": "独有",
+        "title": "WebP + AVIF 双格式",
+        "desc": "同时支持 WebP 和 AVIF 两种现代图片格式，AVIF 比 WebP 平均再小 30%，满足不同场景需求。"
+      },
+      {
+        "tag": "安全",
+        "title": "100% 浏览器本地处理",
+        "desc": "所有转换在你的浏览器中完成，图片不会上传到任何服务器，完全保护隐私，符合 GDPR 要求。"
+      },
+      {
+        "tag": "高效",
+        "title": "批量处理 + 实时预览",
+        "desc": "支持同时处理数百张图片，提供实时预览和滑块对比，直观看到转换效果。"
+      }
+    ]
+  },
+  "converter": {
+    "upload": {
+      "title": "拖拽图片到此处，或点击上传",
+      "hint": "支持 JPG、PNG、GIF、SVG、ICO、BMP、HEIC、TIFF、AVIF、WebP",
+      "addMore": "点击添加更多文件"
+    },
+    "fileList": {
+      "filesAdded": "已添加 {{count}} 个文件",
+      "convertFailed": "转换失败",
+      "clearAll": "一键清空"
+    },
+    "settings": {
+      "title": "转换设置",
+      "outputFormat": "输出格式",
+      "preset": "预设方案",
+      "presets": {
+        "extreme": "极致压缩",
+        "balanced": "平衡",
+        "maxQuality": "极致质量"
+      },
+      "quality": "质量",
+      "size": "尺寸缩放",
+      "advanced": "高级选项",
+      "mode": "转换模式",
+      "lossy": "有损压缩",
+      "lossless": "无损压缩",
+      "metadata": "保留元数据 (EXIF)",
+      "addFilesFirst": "请先添加图片文件以开始转换",
+      "formatDesc": {
+        "webp": "通用推荐，兼容性最佳",
+        "avif": "更新格式，压缩率更高",
+        "jpg": "经典格式，广泛兼容",
+        "png": "无损格式，支持透明",
+        "heic": "Apple 高效格式 (需 Safari)",
+        "svg": "矢量格式，可嵌入 HTML"
+      }
+    },
+    "batchActions": {
+      "totalFiles": "文件总数",
+      "converted": "已转换",
+      "saved": "总节省",
+      "downloadAll": "下载全部 (ZIP)",
+      "downloadSingle": "逐一下载",
+      "clear": "清空"
+    },
+    "preview": {
+      "title": "预览对比",
+      "original": "原图",
+      "converted": "转换后",
+      "originalSize": "原始大小",
+      "convertedSize": "转换后",
+      "compression": "压缩率"
+    }
+  },
+  "formatPage": {
+    "badge": "任意格式 → {{format}} 转换",
+    "title": "转换图片为 {{format}}，",
+    "highlight": "一键完成",
+    "features": {
+      "anyTo": "任意格式 → {{format}}",
+      "local": "浏览器本地处理，零上传",
+      "batch": "批量转换，无限免费"
+    }
+  },
+  "compare": {
+    "title": "格式对比",
+    "description": "直观对比原始图片、WebP 和 AVIF 的质量与文件大小差异",
+    "dropHint": "拖拽一张图片到这里开始对比",
+    "dropSub": "支持 JPG、PNG、GIF 等格式",
+    "webpCompare": "WebP 对比",
+    "avifCompare": "AVIF 对比",
+    "original": "原图",
+    "reselect": "重新选择图片",
+    "originalSize": "原始大小"
+  },
+  "faq": {
+    "title": "常见问题",
+    "description": "关于 WebP、AVIF 和 PixConvert 的常见疑问解答",
+    "items": [
+      {
+        "q": "什么是 WebP？",
+        "a": "WebP 是 Google 开发的现代图片格式，提供卓越的有损和无损压缩。WebP 无损图片比 PNG 小 26%，WebP 有损图片比同等质量的 JPEG 小 25-34%。"
+      },
+      {
+        "q": "什么是 AVIF？和 WebP 相比如何？",
+        "a": "AVIF（AV1 Image File Format）是基于 AV1 视频编解码器的新一代图片格式。在相同质量下，AVIF 通常比 WebP 再小 20-30%，支持 HDR 和更广色域。不过 AVIF 的编码速度比 WebP 慢，浏览器兼容性略低于 WebP。"
+      },
+      {
+        "q": "PixConvert 安全吗？我的图片会被上传吗？",
+        "a": "绝对安全。所有图片转换在你的浏览器本地完成，图片不会上传到任何服务器，也不会被存储或传输。这是 PixConvert 相比其他在线工具的核心优势之一。"
+      },
+      {
+        "q": "支持哪些图片格式输入？",
+        "a": "支持 JPG、JPEG、PNG、GIF、SVG、ICO、BMP、HEIC、HEIF、TIFF、AVIF、WebP 等主流格式。"
+      },
+      {
+        "q": "可以批量转换吗？有数量限制吗？",
+        "a": "可以！PixConvert 支持批量处理，理论上没有数量限制。不过建议一次不要超过 200 张图片，以保证浏览器的处理性能。"
+      },
+      {
+        "q": "WebP 和 AVIF 在所有浏览器上都支持吗？",
+        "a": "WebP 支持率超过 96%（Chrome、Firefox、Safari、Edge 均支持）。AVIF 支持率约 93%（Chrome、Firefox 支持，Safari 16.0+ 支持）。对于不支持的浏览器，建议使用 picture 标签提供 fallback。"
+      },
+      {
+        "q": "转换后的图片质量会下降吗？",
+        "a": "在有损模式下，根据你设置的质量参数，可能会有轻微的质量下降。但大多数情况下，人眼无法分辨 80% 质量以上的差异。你也可以选择无损模式来保持原始质量。"
+      },
+      {
+        "q": "PixConvert 完全免费吗？",
+        "a": "是的，完全免费！PixConvert 是一个纯前端工具，没有服务器成本，因此可以永久免费提供。"
+      }
+    ]
+  },
+  "lang": {
+    "en": "English",
+    "zh": "中文",
+    "ja": "日本語",
+    "fr": "Français",
+    "de": "Deutsch",
+    "es": "Español",
+    "pt": "Português",
+    "ru": "Русский",
+    "vi": "Tiếng Việt",
+    "ar": "العربية"
+  }
+}

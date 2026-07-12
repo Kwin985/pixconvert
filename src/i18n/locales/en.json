@@ -1,0 +1,178 @@
+{
+  "nav": {
+    "webpAvif": "WebP/AVIF",
+    "toJpg": "To JPG",
+    "toPng": "To PNG",
+    "toHeic": "To HEIC",
+    "toSvg": "To SVG",
+    "compare": "Compare",
+    "faq": "FAQ"
+  },
+  "header": {
+    "title": "PixConvert"
+  },
+  "footer": {
+    "tagline": "PixConvert - Free Image Format Converter",
+    "faq": "FAQ",
+    "github": "GitHub",
+    "madeWith": "Made with",
+    "privacy": "All image processing is done locally in your browser. Nothing is uploaded to any server."
+  },
+  "hero": {
+    "badge": "Next-Gen Image Format Converter",
+    "title": "Image Conversion,",
+    "highlight": "Never Been Easier",
+    "description": "PixConvert supports WebP and AVIF dual-format output, batch conversion, all processing done locally in your browser — no uploads, protecting your privacy.",
+    "startConvert": "Start Converting",
+    "features": {
+      "dualFormat": "WebP + AVIF Dual Format",
+      "localProcessing": "Local Processing, Zero Upload",
+      "batchFree": "Batch Conversion, Forever Free"
+    }
+  },
+  "home": {
+    "advantageTitle": "Why PixConvert",
+    "advantages": [
+      {
+        "tag": "Exclusive",
+        "title": "WebP + AVIF Dual Format",
+        "desc": "Supports both WebP and AVIF modern image formats. AVIF is on average 30% smaller than WebP, meeting different scenario needs."
+      },
+      {
+        "tag": "Secure",
+        "title": "100% Browser Local Processing",
+        "desc": "All conversions happen in your browser. Images are never uploaded to any server, fully protecting privacy and GDPR compliant."
+      },
+      {
+        "tag": "Efficient",
+        "title": "Batch Processing + Live Preview",
+        "desc": "Process hundreds of images simultaneously with real-time preview and slider comparison to visually see the conversion results."
+      }
+    ]
+  },
+  "converter": {
+    "upload": {
+      "title": "Drag & drop images here, or click to upload",
+      "hint": "Supports JPG, PNG, GIF, SVG, ICO, BMP, HEIC, TIFF, AVIF, WebP",
+      "addMore": "Click to add more files"
+    },
+    "fileList": {
+      "filesAdded": "files added",
+      "convertFailed": "Conversion failed",
+      "clearAll": "Clear All"
+    },
+    "settings": {
+      "title": "Conversion Settings",
+      "outputFormat": "Output Format",
+      "preset": "Preset",
+      "presets": {
+        "extreme": "Extreme",
+        "balanced": "Balanced",
+        "maxQuality": "Max Quality"
+      },
+      "quality": "Quality",
+      "size": "Size Scale",
+      "advanced": "Advanced Options",
+      "mode": "Conversion Mode",
+      "lossy": "Lossy",
+      "lossless": "Lossless",
+      "metadata": "Preserve Metadata (EXIF)",
+      "addFilesFirst": "Please add images to start converting",
+      "formatDesc": {
+        "webp": "Universal recommended, best compatibility",
+        "avif": "Newer format, higher compression",
+        "jpg": "Classic format, wide compatibility",
+        "png": "Lossless format, supports transparency",
+        "heic": "Apple efficient format (Safari required)",
+        "svg": "Vector format, embeddable in HTML"
+      }
+    },
+    "batchActions": {
+      "totalFiles": "Total Files",
+      "converted": "Converted",
+      "saved": "Saved",
+      "downloadAll": "Download All (ZIP)",
+      "downloadSingle": "Download Each",
+      "clear": "Clear"
+    },
+    "preview": {
+      "title": "Preview Comparison",
+      "original": "Original",
+      "converted": "Converted",
+      "originalSize": "Original Size",
+      "convertedSize": "After Conversion",
+      "compression": "Compression"
+    }
+  },
+  "formatPage": {
+    "badge": "Any Format → {{format}} Conversion",
+    "title": "Convert Images to {{format}},",
+    "highlight": "One Click Done",
+    "features": {
+      "anyTo": "Any Format → {{format}}",
+      "local": "Local Processing, Zero Upload",
+      "batch": "Batch Conversion, Free"
+    }
+  },
+  "compare": {
+    "title": "Format Comparison",
+    "description": "Visually compare the quality and file size differences between Original, WebP and AVIF",
+    "dropHint": "Drag an image here to start comparing",
+    "dropSub": "Supports JPG, PNG, GIF and more",
+    "webpCompare": "WebP Comparison",
+    "avifCompare": "AVIF Comparison",
+    "original": "Original",
+    "reselect": "Choose another image",
+    "originalSize": "Original Size"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Common questions about WebP, AVIF and PixConvert",
+    "items": [
+      {
+        "q": "What is WebP?",
+        "a": "WebP is a modern image format developed by Google, providing superior lossy and lossless compression. WebP lossless images are 26% smaller than PNG, and WebP lossy images are 25-34% smaller than JPEG at equivalent quality."
+      },
+      {
+        "q": "What is AVIF? How does it compare to WebP?",
+        "a": "AVIF (AV1 Image File Format) is a next-generation image format based on the AV1 video codec. At the same quality, AVIF is typically 20-30% smaller than WebP, supporting HDR and wider color gamut. However, AVIF encoding is slower than WebP and has slightly lower browser compatibility."
+      },
+      {
+        "q": "Is PixConvert safe? Are my images uploaded?",
+        "a": "Absolutely safe. All image conversion happens locally in your browser. Images are never uploaded to any server, stored, or transmitted. This is one of PixConvert's core advantages over other online tools."
+      },
+      {
+        "q": "What image formats are supported for input?",
+        "a": "Supports JPG, JPEG, PNG, GIF, SVG, ICO, BMP, HEIC, HEIF, TIFF, AVIF, WebP and other mainstream formats."
+      },
+      {
+        "q": "Can I batch convert? Is there a limit?",
+        "a": "Yes! PixConvert supports batch processing with theoretically no limit. However, we recommend no more than 200 images at once to maintain optimal browser performance."
+      },
+      {
+        "q": "Are WebP and AVIF supported in all browsers?",
+        "a": "WebP has over 96% browser support (Chrome, Firefox, Safari, Edge). AVIF has about 93% support (Chrome, Firefox, Safari 16.0+). For unsupported browsers, we recommend using the picture tag to provide a fallback."
+      },
+      {
+        "q": "Will the image quality decrease after conversion?",
+        "a": "In lossy mode, there may be slight quality degradation depending on your quality setting. However, most people cannot distinguish differences above 80% quality. You can also choose lossless mode to preserve original quality."
+      },
+      {
+        "q": "Is PixConvert completely free?",
+        "a": "Yes, completely free! PixConvert is a pure frontend tool with no server costs, so it can remain free forever."
+      }
+    ]
+  },
+  "lang": {
+    "en": "English",
+    "zh": "中文",
+    "ja": "日本語",
+    "fr": "Français",
+    "de": "Deutsch",
+    "es": "Español",
+    "pt": "Português",
+    "ru": "Русский",
+    "vi": "Tiếng Việt",
+    "ar": "العربية"
+  }
+}

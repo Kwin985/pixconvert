@@ -1,0 +1,178 @@
+{
+  "nav": {
+    "webpAvif": "WebP/AVIF",
+    "toJpg": "Sang JPG",
+    "toPng": "Sang PNG",
+    "toHeic": "Sang HEIC",
+    "toSvg": "Sang SVG",
+    "compare": "So Sánh",
+    "faq": "FAQ"
+  },
+  "header": {
+    "title": "PixConvert"
+  },
+  "footer": {
+    "tagline": "PixConvert - Công Cụ Chuyển Đổi Ảnh Miễn Phí",
+    "faq": "FAQ",
+    "github": "GitHub",
+    "madeWith": "Được tạo bằng",
+    "privacy": "Tất cả quá trình xử lý ảnh được thực hiện cục bộ trong trình duyệt của bạn. Không có gì được tải lên bất kỳ máy chủ nào."
+  },
+  "hero": {
+    "badge": "Công Cụ Chuyển Đổi Ảnh Thế Hệ Mới",
+    "title": "Chuyển Đổi Hình Ảnh,",
+    "highlight": "Chưa Bao Giờ Dễ Hơn",
+    "description": "PixConvert hỗ trợ xuất định dạng kép WebP và AVIF, chuyển đổi hàng loạt, tất cả xử lý được thực hiện cục bộ trong trình duyệt — không tải lên, bảo vệ quyền riêng tư của bạn.",
+    "startConvert": "Bắt Đầu Chuyển Đổi",
+    "features": {
+      "dualFormat": "Định Dạng Kép WebP + AVIF",
+      "localProcessing": "Xử Lý Cục Bộ, Không Tải Lên",
+      "batchFree": "Chuyển Đổi Hàng Loạt, Miễn Phí Mãi Mãi"
+    }
+  },
+  "home": {
+    "advantageTitle": "Tại Sao Chọn PixConvert",
+    "advantages": [
+      {
+        "tag": "Độc Quyền",
+        "title": "Định Dạng Kép WebP + AVIF",
+        "desc": "Hỗ trợ cả hai định dạng ảnh hiện đại WebP và AVIF. AVIF trung bình nhỏ hơn WebP 30%, đáp ứng các nhu cầu khác nhau."
+      },
+      {
+        "tag": "An Toàn",
+        "title": "100% Xử Lý Cục Bộ Trên Trình Duyệt",
+        "desc": "Tất cả chuyển đổi diễn ra trong trình duyệt của bạn. Hình ảnh không bao giờ được tải lên bất kỳ máy chủ nào, bảo vệ hoàn toàn quyền riêng tư và tuân thủ GDPR."
+      },
+      {
+        "tag": "Hiệu Quả",
+        "title": "Xử Lý Hàng Loạt + Xem Trước Trực Tiếp",
+        "desc": "Xử lý hàng trăm hình ảnh đồng thời với xem trước thời gian thực và so sánh bằng thanh trượt để thấy trực quan kết quả chuyển đổi."
+      }
+    ]
+  },
+  "converter": {
+    "upload": {
+      "title": "Kéo và thả ảnh vào đây, hoặc nhấp để tải lên",
+      "hint": "Hỗ trợ JPG, PNG, GIF, SVG, ICO, BMP, HEIC, TIFF, AVIF, WebP",
+      "addMore": "Nhấp để thêm tệp"
+    },
+    "fileList": {
+      "filesAdded": "tệp đã thêm",
+      "convertFailed": "Chuyển đổi thất bại",
+      "clearAll": "Xóa tất cả"
+    },
+    "settings": {
+      "title": "Cài Đặt Chuyển Đổi",
+      "outputFormat": "Định Dạng Đầu Ra",
+      "preset": "Cài Đặt Sẵn",
+      "presets": {
+        "extreme": "Cực Đại",
+        "balanced": "Cân Bằng",
+        "maxQuality": "Chất Lượng Tối Đa"
+      },
+      "quality": "Chất Lượng",
+      "size": "Tỷ Lệ Kích Thước",
+      "advanced": "Tùy Chọn Nâng Cao",
+      "mode": "Chế Độ Chuyển Đổi",
+      "lossy": "Có Mất Dữ Liệu",
+      "lossless": "Không Mất Dữ Liệu",
+      "metadata": "Giữ Metadata (EXIF)",
+      "addFilesFirst": "Vui lòng thêm ảnh để bắt đầu chuyển đổi",
+      "formatDesc": {
+        "webp": "Khuyến nghị phổ biến, tương thích tốt nhất",
+        "avif": "Định dạng mới hơn, nén cao hơn",
+        "jpg": "Định dạng cổ điển, tương thích rộng rãi",
+        "png": "Định dạng không mất dữ liệu, hỗ trợ trong suốt",
+        "heic": "Định dạng hiệu quả của Apple (yêu cầu Safari)",
+        "svg": "Định dạng vector, có thể nhúng vào HTML"
+      }
+    },
+    "batchActions": {
+      "totalFiles": "Tổng Số Tệp",
+      "converted": "Đã Chuyển Đổi",
+      "saved": "Đã Tiết Kiệm",
+      "downloadAll": "Tải Tất Cả (ZIP)",
+      "downloadSingle": "Tải Từng Tệp",
+      "clear": "Xóa"
+    },
+    "preview": {
+      "title": "So Sánh Xem Trước",
+      "original": "Bản Gốc",
+      "converted": "Đã Chuyển Đổi",
+      "originalSize": "Kích Thước Gốc",
+      "convertedSize": "Sau Chuyển Đổi",
+      "compression": "Độ Nén"
+    }
+  },
+  "formatPage": {
+    "badge": "Mọi Định Dạng → Chuyển Đổi {{format}}",
+    "title": "Chuyển Đổi Hình Ảnh Sang {{format}},",
+    "highlight": "Chỉ Một Cú Nhấp",
+    "features": {
+      "anyTo": "Mọi Định Dạng → {{format}}",
+      "local": "Xử Lý Cục Bộ, Không Tải Lên",
+      "batch": "Chuyển Đổi Hàng Loạt, Miễn Phí"
+    }
+  },
+  "compare": {
+    "title": "So Sánh Định Dạng",
+    "description": "So sánh trực quan chất lượng và sự khác biệt về kích thước tệp giữa Bản Gốc, WebP và AVIF",
+    "dropHint": "Kéo một hình ảnh vào đây để bắt đầu so sánh",
+    "dropSub": "Hỗ trợ JPG, PNG, GIF và hơn thế nữa",
+    "webpCompare": "So Sánh WebP",
+    "avifCompare": "So Sánh AVIF",
+    "original": "Bản Gốc",
+    "reselect": "Chọn hình ảnh khác",
+    "originalSize": "Kích Thước Gốc"
+  },
+  "faq": {
+    "title": "Câu Hỏi Thường Gặp",
+    "description": "Các câu hỏi phổ biến về WebP, AVIF và PixConvert",
+    "items": [
+      {
+        "q": "WebP là gì?",
+        "a": "WebP là định dạng hình ảnh hiện đại do Google phát triển, cung cấp khả năng nén vượt trội có mất dữ liệu và không mất dữ liệu. Ảnh WebP không mất dữ liệu nhỏ hơn PNG 26% và ảnh WebP có mất dữ liệu nhỏ hơn JPEG 25-34% ở chất lượng tương đương."
+      },
+      {
+        "q": "AVIF là gì? So với WebP thì thế nào?",
+        "a": "AVIF (AV1 Image File Format) là định dạng hình ảnh thế hệ tiếp theo dựa trên codec video AV1. Ở cùng chất lượng, AVIF thường nhỏ hơn WebP 20-30%, hỗ trợ HDR và dải màu rộng hơn. Tuy nhiên, mã hóa AVIF chậm hơn WebP và có khả năng tương thích trình duyệt thấp hơn một chút."
+      },
+      {
+        "q": "PixConvert có an toàn không? Hình ảnh của tôi có bị tải lên không?",
+        "a": "Hoàn toàn an toàn. Tất cả chuyển đổi hình ảnh diễn ra cục bộ trong trình duyệt của bạn. Hình ảnh không bao giờ được tải lên bất kỳ máy chủ nào, không được lưu trữ hay truyền đi. Đây là một trong những lợi thế cốt lõi của PixConvert so với các công cụ trực tuyến khác."
+      },
+      {
+        "q": "Những định dạng hình ảnh nào được hỗ trợ đầu vào?",
+        "a": "Hỗ trợ JPG, JPEG, PNG, GIF, SVG, ICO, BMP, HEIC, HEIF, TIFF, AVIF, WebP và các định dạng phổ biến khác."
+      },
+      {
+        "q": "Tôi có thể chuyển đổi hàng loạt không? Có giới hạn không?",
+        "a": "Có! PixConvert hỗ trợ xử lý hàng loạt về mặt lý thuyết không giới hạn. Tuy nhiên, chúng tôi khuyên bạn không nên vượt quá 200 hình ảnh một lần để duy trì hiệu suất trình duyệt tối ưu."
+      },
+      {
+        "q": "WebP và AVIF có được hỗ trợ trong tất cả các trình duyệt không?",
+        "a": "WebP có hơn 96% hỗ trợ trình duyệt (Chrome, Firefox, Safari, Edge). AVIF có khoảng 93% hỗ trợ (Chrome, Firefox, Safari 16.0+). Đối với các trình duyệt không hỗ trợ, chúng tôi khuyên bạn nên sử dụng thẻ picture để cung cấp phương án dự phòng."
+      },
+      {
+        "q": "Chất lượng hình ảnh có giảm sau khi chuyển đổi không?",
+        "a": "Ở chế độ có mất dữ liệu, có thể có sự suy giảm chất lượng nhẹ tùy thuộc vào cài đặt chất lượng của bạn. Tuy nhiên, hầu hết mọi người không thể phân biệt sự khác biệt ở chất lượng trên 80%. Bạn cũng có thể chọn chế độ không mất dữ liệu để giữ nguyên chất lượng gốc."
+      },
+      {
+        "q": "PixConvert có hoàn toàn miễn phí không?",
+        "a": "Có, hoàn toàn miễn phí! PixConvert là công cụ thuần frontend không có chi phí máy chủ, vì vậy nó có thể miễn phí mãi mãi."
+      }
+    ]
+  },
+  "lang": {
+    "en": "English",
+    "zh": "中文",
+    "ja": "日本語",
+    "fr": "Français",
+    "de": "Deutsch",
+    "es": "Español",
+    "pt": "Português",
+    "ru": "Русский",
+    "vi": "Tiếng Việt",
+    "ar": "العربية"
+  }
+}
