@@ -79,3 +79,37 @@ Yes, PixConvert supports batch processing. You can upload multiple images and co
 - [Convert to SVG](https://pixconvert.cn/to-svg)
 - [Format Comparison](https://pixconvert.cn/compare)
 - [FAQ](https://pixconvert.cn/faq)
+
+## Usage Examples
+
+**Example 1: Batch Conversion**
+User uploads 10 PNG files. PixConvert processes them locally and provides a "Download All" button, generating a ZIP file containing all converted WebP images.
+
+**Example 2: Quality Adjustment**
+User slides the quality control to "75". PixConvert applies a balanced compression algorithm, reducing file size by 40% while maintaining visual fidelity.
+
+**Example 3: Format Comparison**
+User clicks "Compare". PixConvert renders a side-by-side slider showing the original JPG and the converted AVIF, highlighting the 45% file size reduction.
+
+**Example 4: One-Click Clear**
+After converting 20 images, user clicks "Clear All" to remove all files from the workspace, then drags in a new batch of HEIC photos from their iPhone.
+
+**Example 5: Theme Switching**
+User toggles between dark and light theme based on their system preference. The interface adapts immediately with smooth transitions.
+
+**Example 6: Multi-Language Support**
+User visits from France. PixConvert automatically detects the browser language (fr-FR) and displays the interface in French. User can manually switch to English or any of 10 supported languages.
+
+## Target User Personas
+
+**Persona 1: Web Developer**
+Needs to convert images for web optimization. Values: file size reduction, batch processing, WebP/AVIF support.
+
+**Persona 2: Content Creator**
+Needs to resize and format images for social media. Values: ease of use, quality control, privacy.
+
+**Persona 3: Photographer**
+Needs to convert RAW/HEIC photos to web-friendly formats. Values: HEIC support, high quality output, no uploads.
+
+**Persona 4: Business Owner**
+Needs to optimize website images. Values: free, no registration, batch processing, privacy compliance.
