@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
-import { Github, Heart } from 'lucide-react';
+import { Github, Heart, Mail } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useConverterStore } from '@/store/useConverterStore';
+import ShareButtons from '@/components/ShareButtons';
 
 export default function Footer() {
   const isDark = useConverterStore((s) => s.isDark);
@@ -21,9 +22,18 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center gap-6">
+            <ShareButtons />
+            <span className="w-px h-4 bg-surface-4" />
             <Link to="/faq" className={`text-sm hover:text-neon transition-colors ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
               {t('footer.faq')}
             </Link>
+            <a
+              href="mailto:mdvrinsider@gmail.com"
+              className={`flex items-center gap-1 text-sm hover:text-neon transition-colors ${isDark ? 'text-gray-400' : 'text-gray-500'}`}
+            >
+              <Mail className="w-4 h-4" />
+              {t('footer.contact')}
+            </a>
             <a
               href="https://github.com"
               target="_blank"

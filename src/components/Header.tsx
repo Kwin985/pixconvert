@@ -1,8 +1,10 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Image, GitCompare, HelpCircle, FileImage } from 'lucide-react';
+import { Image, GitCompare, HelpCircle, FileImage, MessageSquare } from 'lucide-react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import ThemeToggle from '@/components/ThemeToggle';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
+import FeedbackModal from '@/components/FeedbackModal';
 import { useConverterStore } from '@/store/useConverterStore';
 
 export default function Header() {
@@ -21,6 +23,7 @@ export default function Header() {
   ];
 
   const isActive = (path: string) => location.pathname === path;
+  const [showFeedback, setShowFeedback] = useState(false);
 
   return (
     <header
@@ -68,9 +71,20 @@ export default function Header() {
 
         <div className="flex items-center gap-1">
           <LanguageSwitcher />
+          <button
+            onClick={() => setShowFeedback(true)}
+            className={`p-2 rounded-lg text-sm transition-colors ${
+              isDark ? 'text-gray-400 hover:text-gray-200 hover:bg-surface-3' : 'text-gray-500 hover:text-gray-700 hover:bg-gray-100'
+            }`}
+            title={t('nav.feedback')}
+          >
+            <MessageSquare className="w-5 h-5" />
+          </button>
           <ThemeToggle />
         </div>
       </div>
+
+      <FeedbackModal isOpen={showFeedback} onClose={() => setShowFeedback(false)} />
 
       {/* Mobile nav */}
       <nav className={`lg:hidden flex justify-center gap-1 pb-2 border-t overflow-x-auto ${isDark ? 'border-surface-3' : 'border-light-border'}`}>

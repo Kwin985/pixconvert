@@ -6,7 +6,8 @@
     "toHeic": "转 HEIC",
     "toSvg": "转 SVG",
     "compare": "格式对比",
-    "faq": "常见问题"
+    "faq": "常见问题",
+    "feedback": "反馈"
   },
   "header": {
     "title": "PixConvert"
@@ -14,6 +15,7 @@
   "footer": {
     "tagline": "PixConvert - 免费图片格式转换工具",
     "faq": "常见问题",
+    "contact": "联系我们",
     "github": "GitHub",
     "madeWith": "Made with",
     "privacy": "所有图片处理均在浏览器本地完成，不会上传到任何服务器。"
@@ -128,6 +130,8 @@
   "faq": {
     "title": "常见问题",
     "description": "关于 WebP、AVIF 和 PixConvert 的常见疑问解答",
+    "contactPrompt": "没有找到答案？",
+    "contactEmail": "联系我们",
     "items": [
       {
         "q": "什么是 WebP？",
@@ -174,5 +178,31 @@
     "ru": "Русский",
     "vi": "Tiếng Việt",
     "ar": "العربية"
+  },
+  "share": {
+    "like": "喜欢？分享给朋友！",
+    "facebook": "分享到 Facebook",
+    "twitter": "分享到 Twitter",
+    "reddit": "分享到 Reddit"
+  },
+  "feedback": {
+    "title": "发送反馈",
+    "name": "姓名",
+    "namePlaceholder": "你的姓名",
+    "email": "邮箱",
+    "emailPlaceholder": "your@email.com",
+    "subject": "主题",
+    "selectSubject": "选择主题",
+    "subjectFeature": "功能建议",
+    "subjectBug": "Bug 反馈",
+    "subjectQuestion": "问题咨询",
+    "subjectOther": "其他",
+    "message": "留言",
+    "messagePlaceholder": "描述你的反馈...",
+    "send": "发送反馈",
+    "sending": "发送中...",
+    "sent": "反馈已发送！",
+    "thankYou": "感谢你的反馈，我们会尽快回复。",
+    "close": "关闭"
   }
 }

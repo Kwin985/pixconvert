@@ -6,7 +6,8 @@
     "toHeic": "To HEIC",
     "toSvg": "To SVG",
     "compare": "Compare",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "feedback": "Feedback"
   },
   "header": {
     "title": "PixConvert"
@@ -14,6 +15,7 @@
   "footer": {
     "tagline": "PixConvert - Free Image Format Converter",
     "faq": "FAQ",
+    "contact": "Contact",
     "github": "GitHub",
     "madeWith": "Made with",
     "privacy": "All image processing is done locally in your browser. Nothing is uploaded to any server."
@@ -128,6 +130,8 @@
   "faq": {
     "title": "Frequently Asked Questions",
     "description": "Common questions about WebP, AVIF and PixConvert",
+    "contactPrompt": "Didn't find your answer?",
+    "contactEmail": "contact us",
     "items": [
       {
         "q": "What is WebP?",
@@ -174,5 +178,31 @@
     "ru": "Русский",
     "vi": "Tiếng Việt",
     "ar": "العربية"
+  },
+  "share": {
+    "like": "Like it? Share it!",
+    "facebook": "Share on Facebook",
+    "twitter": "Share on Twitter",
+    "reddit": "Share on Reddit"
+  },
+  "feedback": {
+    "title": "Send Feedback",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com",
+    "subject": "Subject",
+    "selectSubject": "Select subject",
+    "subjectFeature": "Feature Request",
+    "subjectBug": "Bug Report",
+    "subjectQuestion": "Question",
+    "subjectOther": "Other",
+    "message": "Message",
+    "messagePlaceholder": "Describe your feedback...",
+    "send": "Send Feedback",
+    "sending": "Sending...",
+    "sent": "Feedback Sent!",
+    "thankYou": "Thank you for your feedback. We'll get back to you soon.",
+    "close": "Close"
   }
 }

@@ -6,7 +6,8 @@
     "toHeic": "HEICへ変換",
     "toSvg": "SVGへ",
     "compare": "比較",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "feedback": "フィードバック"
   },
   "header": {
     "title": "PixConvert"
@@ -14,6 +15,7 @@
   "footer": {
     "tagline": "PixConvert - 無料画像フォーマット変換ツール",
     "faq": "FAQ",
+    "contact": "お問い合わせ",
     "github": "GitHub",
     "madeWith": "で作られました",
     "privacy": "すべての画像処理はブラウザ内でローカルに行われます。サーバーにアップロードされることは一切ありません。"
@@ -128,6 +130,8 @@
   "faq": {
     "title": "よくある質問",
     "description": "WebP、AVIF、PixConvertに関するよくある質問",
+    "contactPrompt": "答えが見つからない？",
+    "contactEmail": "お問い合わせ",
     "items": [
       {
         "q": "WebPとは何ですか？",
@@ -174,5 +178,31 @@
     "ru": "Русский",
     "vi": "Tiếng Việt",
     "ar": "العربية"
+  },
+  "share": {
+    "like": "気に入ったらシェア！",
+    "facebook": "Facebookでシェア",
+    "twitter": "Twitterでシェア",
+    "reddit": "Redditでシェア"
+  },
+  "feedback": {
+    "title": "フィードバックを送信",
+    "name": "名前",
+    "namePlaceholder": "あなたの名前",
+    "email": "メール",
+    "emailPlaceholder": "your@email.com",
+    "subject": "件名",
+    "selectSubject": "件名を選択",
+    "subjectFeature": "機能リクエスト",
+    "subjectBug": "バグ報告",
+    "subjectQuestion": "質問",
+    "subjectOther": "その他",
+    "message": "メッセージ",
+    "messagePlaceholder": "フィードバックを記述...",
+    "send": "フィードバックを送信",
+    "sending": "送信中...",
+    "sent": "フィードバック送信完了！",
+    "thankYou": "フィードバックありがとうございます。すぐにご連絡します。",
+    "close": "閉じる"
   }
 }

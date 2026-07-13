@@ -6,7 +6,8 @@
     "toHeic": "إلى HEIC",
     "toSvg": "إلى SVG",
     "compare": "مقارنة",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "feedback": "الملاحظات"
   },
   "header": {
     "title": "PixConvert"
@@ -14,6 +15,7 @@
   "footer": {
     "tagline": "PixConvert - محول صور مجاني",
     "faq": "FAQ",
+    "contact": "اتصل بنا",
     "github": "GitHub",
     "madeWith": "صُنع بـ",
     "privacy": "تتم جميع معالجة الصور محليًا في متصفحك. لا يتم تحميل أي شيء إلى أي خادم."
@@ -128,6 +130,8 @@
   "faq": {
     "title": "الأسئلة الشائعة",
     "description": "أسئلة شائعة حول WebP و AVIF و PixConvert",
+    "contactPrompt": "لم تجد الإجابة؟",
+    "contactEmail": "اتصل بنا",
     "items": [
       {
         "q": "ما هو WebP؟",
@@ -174,5 +178,31 @@
     "ru": "Русский",
     "vi": "Tiếng Việt",
     "ar": "العربية"
+  },
+  "share": {
+    "like": "أعجبك؟ شاركها!",
+    "facebook": "شارك على فيسبوك",
+    "twitter": "شارك على تويتر",
+    "reddit": "شارك على ريديت"
+  },
+  "feedback": {
+    "title": "إرسال الملاحظات",
+    "name": "الاسم",
+    "namePlaceholder": "اسمك",
+    "email": "البريد الإلكتروني",
+    "emailPlaceholder": "بريدك@الإلكتروني.com",
+    "subject": "الموضوع",
+    "selectSubject": "اختر الموضوع",
+    "subjectFeature": "طلب ميزة",
+    "subjectBug": "تقرير خطأ",
+    "subjectQuestion": "سؤال",
+    "subjectOther": "أخرى",
+    "message": "الرسالة",
+    "messagePlaceholder": "صف ملاحظاتك...",
+    "send": "إرسال الملاحظات",
+    "sending": "جاري الإرسال...",
+    "sent": "تم إرسال الملاحظات!",
+    "thankYou": "شكراً لملاحظاتك. سنقوم بالرد عليك قريباً.",
+    "close": "إغلاق"
   }
 }

@@ -6,7 +6,8 @@
     "toHeic": "Sang HEIC",
     "toSvg": "Sang SVG",
     "compare": "So Sánh",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "feedback": "Phản hồi"
   },
   "header": {
     "title": "PixConvert"
@@ -14,6 +15,7 @@
   "footer": {
     "tagline": "PixConvert - Công Cụ Chuyển Đổi Ảnh Miễn Phí",
     "faq": "FAQ",
+    "contact": "Liên hệ",
     "github": "GitHub",
     "madeWith": "Được tạo bằng",
     "privacy": "Tất cả quá trình xử lý ảnh được thực hiện cục bộ trong trình duyệt của bạn. Không có gì được tải lên bất kỳ máy chủ nào."
@@ -128,6 +130,8 @@
   "faq": {
     "title": "Câu Hỏi Thường Gặp",
     "description": "Các câu hỏi phổ biến về WebP, AVIF và PixConvert",
+    "contactPrompt": "Không tìm thấy câu trả lời?",
+    "contactEmail": "liên hệ với chúng tôi",
     "items": [
       {
         "q": "WebP là gì?",
@@ -174,5 +178,31 @@
     "ru": "Русский",
     "vi": "Tiếng Việt",
     "ar": "العربية"
+  },
+  "share": {
+    "like": "Thích? Chia sẻ đi!",
+    "facebook": "Chia sẻ lên Facebook",
+    "twitter": "Chia sẻ lên Twitter",
+    "reddit": "Chia sẻ lên Reddit"
+  },
+  "feedback": {
+    "title": "Gửi Phản Hồi",
+    "name": "Tên",
+    "namePlaceholder": "Tên của bạn",
+    "email": "Email",
+    "emailPlaceholder": "email@củabạn.com",
+    "subject": "Chủ Đề",
+    "selectSubject": "Chọn chủ đề",
+    "subjectFeature": "Yêu Cầu Chức Năng",
+    "subjectBug": "Báo Lỗi",
+    "subjectQuestion": "Câu Hỏi",
+    "subjectOther": "Khác",
+    "message": "Tin Nhắn",
+    "messagePlaceholder": "Mô tả phản hồi của bạn...",
+    "send": "Gửi Phản Hồi",
+    "sending": "Đang gửi...",
+    "sent": "Phản hồi đã được gửi!",
+    "thankYou": "Cảm ơn phản hồi của bạn. Chúng tôi sẽ liên hệ với bạn sớm.",
+    "close": "Đóng"
   }
 }

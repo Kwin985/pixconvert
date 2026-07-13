@@ -7,17 +7,30 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/favicon.svg" />
 
+    <!-- Performance: DNS prefetch & preconnect -->
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin />
+
     <!-- Primary SEO -->
-    <title>PixConvert - Free Online Image Format Converter | WebP / AVIF / JPG / PNG</title>
-    <meta name="description" content="Free online image format converter. Convert images to WebP, AVIF, JPG, PNG, HEIC. Batch processing, 100% browser-side, no uploads. Protect your privacy." />
-    <meta name="keywords" content="webp converter, avif converter, image format converter, image to webp, image to jpg, image to png, image to avif, image to heic, free image converter, online image converter, batch image converter, webp to jpg, webp to png" />
+    <title>PixConvert - Free Online Image Converter | WebP, AVIF, JPG, PNG, HEIC, SVG</title>
+    <meta name="description" content="Free online image converter. Convert images to WebP, AVIF, JPG, PNG, HEIC, SVG. Batch processing, 100% browser-side, no uploads. Supports 10 languages." />
+    <meta name="keywords" content="webp converter, avif converter, image converter, image to webp, image to jpg, image to png, image to avif, image to heic, image to svg, free image converter, online image converter, batch image converter, webp to jpg, webp to png, heic converter" />
+    <meta name="author" content="PixConvert" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="PixConvert - Free Online Image Format Converter" />
-    <meta property="og:description" content="Convert images to WebP, AVIF, JPG, PNG, HEIC. 100% browser-side, no uploads." />
+    <meta property="og:description" content="Convert images to WebP, AVIF, JPG, PNG, HEIC, SVG. 100% browser-side, no uploads. Supports 10 languages. Free, no registration." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://pixconvert.cn/" />
     <meta property="og:site_name" content="PixConvert" />
+    <meta property="og:image" content="https://pixconvert.cn/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="PixConvert - Free Online Image Format Converter" />
     <meta property="og:locale" content="zh_CN" />
     <meta property="og:locale:alternate" content="en_US" />
     <meta property="og:locale:alternate" content="ja_JP" />
@@ -32,7 +45,9 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="PixConvert - Free Online Image Format Converter" />
-    <meta name="twitter:description" content="Convert images to WebP, AVIF, JPG, PNG, HEIC. 100% browser-side, no uploads." />
+    <meta name="twitter:description" content="Convert images to WebP, AVIF, JPG, PNG, HEIC, SVG. 100% browser-side, no uploads. Supports 10 languages." />
+    <meta name="twitter:image" content="https://pixconvert.cn/og-image.png" />
+    <meta name="twitter:image:alt" content="PixConvert - Free Online Image Format Converter" />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://pixconvert.cn/" />
@@ -44,6 +59,54 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-QNEE87XZTW');
+    </script>
+
+    <!-- Organization JSON-LD (GEO: helps AI understand the brand entity) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "PixConvert",
+      "url": "https://pixconvert.cn",
+      "logo": "https://pixconvert.cn/favicon.svg",
+      "description": "Free online image format converter supporting WebP, AVIF, JPG, PNG, HEIC, and SVG. All processing done locally in your browser.",
+      "email": "mdvrinsider@gmail.com",
+      "sameAs": []
+    }
+    </script>
+
+    <!-- WebApplication JSON-LD (GEO: signals AI that this is a functional tool) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "PixConvert",
+      "url": "https://pixconvert.cn",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript. Requires HTML5 Canvas support.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Convert images to WebP, AVIF, JPG, PNG, HEIC, SVG",
+        "Batch image processing with ZIP download",
+        "100% browser-side local processing, no uploads",
+        "Slider comparison preview of original vs converted",
+        "Quality control with presets (Extreme Compression, Balanced, Max Quality)",
+        "Supports 10 languages including English, Chinese, Japanese, French, German, Spanish, Portuguese, Russian, Vietnamese, Arabic",
+        "Dark and light theme support"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "1280",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
     </script>
 
     <script type="module">

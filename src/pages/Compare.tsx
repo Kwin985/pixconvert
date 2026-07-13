@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Upload, GripHorizontal } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useConverterStore } from '@/store/useConverterStore';
-import SEO, { breadcrumbSchema } from '@/components/SEO';
+import SEO, { breadcrumbSchema, articleSchema } from '@/components/SEO';
 import { formatFileSize } from '@/types';
 import { trackCompareImage } from '@/lib/gtag';
 
@@ -59,6 +59,11 @@ export default function ComparePage() {
         description="Visually compare WebP, AVIF and original image quality and file size differences. Drag and drop an image to see side-by-side compression results."
         path="/compare"
         structuredData={[
+          articleSchema(
+            'WebP vs AVIF vs Original: Image Format Comparison 2026',
+            'Side-by-side comparison of WebP and AVIF image formats. See the difference in file size and visual quality. WebP saves 25-34%, AVIF saves 45-50% compared to JPG.',
+            '/compare'
+          ),
           breadcrumbSchema([
             { name: 'PixConvert', url: 'https://pixconvert.cn/' },
             { name: 'Format Comparison', url: 'https://pixconvert.cn/compare' },

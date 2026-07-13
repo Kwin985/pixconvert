@@ -6,7 +6,8 @@
     "toHeic": "В HEIC",
     "toSvg": "В SVG",
     "compare": "Сравнить",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "feedback": "Обратная связь"
   },
   "header": {
     "title": "PixConvert"
@@ -14,6 +15,7 @@
   "footer": {
     "tagline": "PixConvert - Бесплатный Конвертер Изображений",
     "faq": "FAQ",
+    "contact": "Контакты",
     "github": "GitHub",
     "madeWith": "Сделано с",
     "privacy": "Вся обработка изображений выполняется локально в вашем браузере. Ничего не загружается на сервер."
@@ -128,6 +130,8 @@
   "faq": {
     "title": "Часто Задаваемые Вопросы",
     "description": "Распространённые вопросы о WebP, AVIF и PixConvert",
+    "contactPrompt": "Не нашли ответа?",
+    "contactEmail": "свяжитесь с нами",
     "items": [
       {
         "q": "Что такое WebP?",
@@ -174,5 +178,31 @@
     "ru": "Русский",
     "vi": "Tiếng Việt",
     "ar": "العربية"
+  },
+  "share": {
+    "like": "Нравится? Поделись!",
+    "facebook": "Поделиться в Facebook",
+    "twitter": "Поделиться в Twitter",
+    "reddit": "Поделиться в Reddit"
+  },
+  "feedback": {
+    "title": "Отправить Обратную Связь",
+    "name": "Имя",
+    "namePlaceholder": "Ваше имя",
+    "email": "Email",
+    "emailPlaceholder": "ваш@email.com",
+    "subject": "Тема",
+    "selectSubject": "Выберите тему",
+    "subjectFeature": "Запрос Функциональности",
+    "subjectBug": "Отчет Ошибки",
+    "subjectQuestion": "Вопрос",
+    "subjectOther": "Другое",
+    "message": "Сообщение",
+    "messagePlaceholder": "Опишите вашу обратную связь...",
+    "send": "Отправить Обратную Связь",
+    "sending": "Отправка...",
+    "sent": "Обратная связь отправлена!",
+    "thankYou": "Спасибо за вашу обратную связь. Мы свяжемся с вами в ближайшее время.",
+    "close": "Закрыть"
   }
 }

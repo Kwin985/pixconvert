@@ -37,6 +37,12 @@ export default function FAQPage() {
         <p className={`mt-3 text-lg ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
           {t('faq.description')}
         </p>
+        <p className={`mt-4 text-sm ${isDark ? 'text-gray-500' : 'text-gray-400'}`}>
+          {t('faq.contactPrompt')}{' '}
+          <a href="mailto:mdvrinsider@gmail.com" className="text-neon hover:underline">
+            {t('faq.contactEmail')}
+          </a>
+        </p>
       </motion.div>
 
       <div className="space-y-3">

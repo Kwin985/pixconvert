@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
   <!-- Home -->
   <url>
     <loc>https://pixconvert.cn/</loc>
-    <lastmod>2026-07-11</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://pixconvert.cn/og-image.png</image:loc>
+      <image:title>PixConvert - Free Online Image Format Converter</image:title>
+      <image:caption>Convert images to WebP, AVIF, JPG, PNG, HEIC, SVG. 100% browser-side, no uploads.</image:caption>
+    </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://pixconvert.cn/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://pixconvert.cn/" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://pixconvert.cn/" />
@@ -19,63 +26,142 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://pixconvert.cn/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixconvert.cn/" />
   </url>
+
+  <!-- To JPG -->
   <url>
     <loc>https://pixconvert.cn/to-jpg</loc>
-    <lastmod>2026-07-11</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://pixconvert.cn/og-image.png</image:loc>
+      <image:title>Convert Images to JPG Online Free - PixConvert</image:title>
+    </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://pixconvert.cn/to-jpg" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://pixconvert.cn/to-jpg" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://pixconvert.cn/to-jpg" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pixconvert.cn/to-jpg" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://pixconvert.cn/to-jpg" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pixconvert.cn/to-jpg" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pixconvert.cn/to-jpg" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pixconvert.cn/to-jpg" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://pixconvert.cn/to-jpg" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pixconvert.cn/to-jpg" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixconvert.cn/to-jpg" />
   </url>
+
+  <!-- To PNG -->
   <url>
     <loc>https://pixconvert.cn/to-png</loc>
-    <lastmod>2026-07-11</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://pixconvert.cn/og-image.png</image:loc>
+      <image:title>Convert Images to PNG Online Free - PixConvert</image:title>
+    </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://pixconvert.cn/to-png" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://pixconvert.cn/to-png" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://pixconvert.cn/to-png" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pixconvert.cn/to-png" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://pixconvert.cn/to-png" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pixconvert.cn/to-png" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pixconvert.cn/to-png" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pixconvert.cn/to-png" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://pixconvert.cn/to-png" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pixconvert.cn/to-png" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixconvert.cn/to-png" />
   </url>
+
+  <!-- To HEIC -->
   <url>
     <loc>https://pixconvert.cn/to-heic</loc>
-    <lastmod>2026-07-11</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://pixconvert.cn/og-image.png</image:loc>
+      <image:title>Convert Images to HEIC Online Free - PixConvert</image:title>
+    </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://pixconvert.cn/to-heic" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://pixconvert.cn/to-heic" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://pixconvert.cn/to-heic" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pixconvert.cn/to-heic" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://pixconvert.cn/to-heic" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pixconvert.cn/to-heic" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pixconvert.cn/to-heic" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pixconvert.cn/to-heic" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://pixconvert.cn/to-heic" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pixconvert.cn/to-heic" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixconvert.cn/to-heic" />
   </url>
+
+  <!-- To SVG -->
   <url>
     <loc>https://pixconvert.cn/to-svg</loc>
-    <lastmod>2026-07-11</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://pixconvert.cn/og-image.png</image:loc>
+      <image:title>Convert Images to SVG Online Free - PixConvert</image:title>
+    </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://pixconvert.cn/to-svg" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://pixconvert.cn/to-svg" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://pixconvert.cn/to-svg" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pixconvert.cn/to-svg" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://pixconvert.cn/to-svg" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pixconvert.cn/to-svg" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pixconvert.cn/to-svg" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pixconvert.cn/to-svg" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://pixconvert.cn/to-svg" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pixconvert.cn/to-svg" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixconvert.cn/to-svg" />
   </url>
+
+  <!-- Compare -->
   <url>
     <loc>https://pixconvert.cn/compare</loc>
-    <lastmod>2026-07-11</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://pixconvert.cn/og-image.png</image:loc>
+      <image:title>WebP vs AVIF vs Original - Image Format Comparison</image:title>
+    </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://pixconvert.cn/compare" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://pixconvert.cn/compare" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pixconvert.cn/compare" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pixconvert.cn/compare" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://pixconvert.cn/compare" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pixconvert.cn/compare" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pixconvert.cn/compare" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pixconvert.cn/compare" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://pixconvert.cn/compare" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pixconvert.cn/compare" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixconvert.cn/compare" />
   </url>
+
+  <!-- FAQ -->
   <url>
     <loc>https://pixconvert.cn/faq</loc>
-    <lastmod>2026-07-11</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pixconvert.cn/og-image.png</image:loc>
+      <image:title>Frequently Asked Questions - PixConvert</image:title>
+    </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://pixconvert.cn/faq" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://pixconvert.cn/faq" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://pixconvert.cn/faq" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pixconvert.cn/faq" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://pixconvert.cn/faq" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pixconvert.cn/faq" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pixconvert.cn/faq" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pixconvert.cn/faq" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://pixconvert.cn/faq" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pixconvert.cn/faq" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixconvert.cn/faq" />
   </url>
 </urlset>

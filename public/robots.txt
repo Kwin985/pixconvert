@@ -1,5 +1,38 @@
+# robots.txt for PixConvert
+# https://pixconvert.cn
+
+# All crawlers
 User-agent: *
 Allow: /
 Disallow: /api/
 
+# AI Crawlers - Allow for GEO optimization
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# Crawl delay
+Crawl-delay: 1
+
+# Sitemap
 Sitemap: https://pixconvert.cn/sitemap.xml
