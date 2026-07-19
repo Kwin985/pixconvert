@@ -17,8 +17,33 @@
     "faq": "常见问题",
     "contact": "联系我们",
     "github": "GitHub",
+    "desktopApp": "桌面版",
     "madeWith": "Made with",
     "privacy": "所有图片处理均在浏览器本地完成，不会上传到任何服务器。"
+  },
+  "desktop": {
+    "badge": "桌面客户端",
+    "title": "下载 PixConvert 桌面版",
+    "subtitle": "更快、更稳、离线可用",
+    "description": "下载 Windows 桌面版，享受更流畅的性能、系统级集成和离线使用体验。同样的隐私优先 — 所有处理都在本地完成。",
+    "downloadBtn": "下载 Windows 版",
+    "version": "v0.1.0",
+    "size": "4 MB",
+    "platform": "Windows x64",
+    "features": [
+      {
+        "title": "极速体验",
+        "desc": "原生性能，无浏览器开销"
+      },
+      {
+        "title": "离线使用",
+        "desc": "无需网络连接即可使用"
+      },
+      {
+        "title": "系统集成",
+        "desc": "资源管理器右键直接转换"
+      }
+    ]
   },
   "hero": {
     "badge": "新一代图片格式转换工具",

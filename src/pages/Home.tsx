@@ -1,4 +1,4 @@
-import { useEffect, useCallback } from 'react';
+﻿import { useEffect, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useConverterStore } from '@/store/useConverterStore';
@@ -12,6 +12,7 @@ import FileList from '@/components/FileList';
 import SettingsPanel from '@/components/SettingsPanel';
 import PreviewComparison from '@/components/PreviewComparison';
 import BatchActions from '@/components/BatchActions';
+import DesktopDownloadSection from '@/components/DesktopDownloadSection';
 
 export default function HomePage() {
   const { tasks, settings, updateTaskResult, setTaskError } = useConverterStore();
@@ -146,6 +147,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <DesktopDownloadSection />
     </div>
   );
 }

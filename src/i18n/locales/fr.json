@@ -1,208 +1,233 @@
-{
-  "nav": {
-    "webpAvif": "WebP/AVIF",
-    "toJpg": "Vers JPG",
-    "toPng": "Vers PNG",
-    "toHeic": "Vers HEIC",
-    "toSvg": "Vers SVG",
-    "compare": "Comparer",
-    "faq": "FAQ",
-    "feedback": "Feedback"
-  },
-  "header": {
-    "title": "PixConvert"
-  },
-  "footer": {
-    "tagline": "PixConvert - Convertisseur gratuit de formats d'image",
-    "faq": "FAQ",
-    "contact": "Contact",
-    "github": "GitHub",
-    "madeWith": "Fait avec",
-    "privacy": "Tout le traitement d'image s'effectue localement dans votre navigateur. Rien n'est téléchargé sur aucun serveur."
-  },
-  "hero": {
-    "badge": "Convertisseur d'image nouvelle génération",
-    "title": "La conversion d'image,",
-    "highlight": "plus simple que jamais",
-    "description": "PixConvert prend en charge la sortie double format WebP et AVIF, la conversion par lots, le tout traité localement dans votre navigateur — sans téléchargement, pour protéger votre vie privée.",
-    "startConvert": "Commencer la conversion",
-    "features": {
-      "dualFormat": "Double format WebP + AVIF",
-      "localProcessing": "Traitement local, zéro téléchargement",
-      "batchFree": "Conversion par lots, gratuit pour toujours"
-    }
-  },
-  "home": {
-    "advantageTitle": "Pourquoi choisir PixConvert",
-    "advantages": [
-      {
-        "tag": "Exclusif",
-        "title": "Double format WebP + AVIF",
-        "desc": "Prend en charge les formats d'image modernes WebP et AVIF. L'AVIF est en moyenne 30% plus léger que le WebP, répondant aux besoins de différents scénarios."
-      },
-      {
-        "tag": "Sécurisé",
-        "title": "Traitement 100% local dans le navigateur",
-        "desc": "Toutes les conversions se font dans votre navigateur. Les images ne sont jamais téléchargées sur un serveur, protégeant totalement votre vie privée et conforme au RGPD (GDPR)."
-      },
-      {
-        "tag": "Efficace",
-        "title": "Traitement par lots + aperçu en direct",
-        "desc": "Traitez des centaines d'images simultanément avec un aperçu en temps réel et une comparaison par curseur pour visualiser les résultats de conversion."
-      }
-    ]
-  },
-  "converter": {
-    "upload": {
-      "title": "Glissez-déposez vos images ici, ou cliquez pour télécharger",
-      "hint": "Prend en charge JPG, PNG, GIF, SVG, ICO, BMP, HEIC, TIFF, AVIF, WebP",
-      "addMore": "Cliquez pour ajouter d'autres fichiers"
-    },
-    "fileList": {
-      "filesAdded": "fichiers ajoutés",
-      "convertFailed": "Échec de la conversion",
-      "clearAll": "Tout effacer"
-    },
-    "settings": {
-      "title": "Paramètres de conversion",
-      "outputFormat": "Format de sortie",
-      "preset": "Préréglage",
-      "presets": {
-        "extreme": "Extrême",
-        "balanced": "Équilibré",
-        "maxQuality": "Qualité maximale"
-      },
-      "quality": "Qualité",
-      "size": "Échelle de taille",
-      "advanced": "Options avancées",
-      "mode": "Mode de conversion",
-      "lossy": "Avec perte",
-      "lossless": "Sans perte",
-      "metadata": "Conserver les métadonnées (EXIF)",
-      "addFilesFirst": "Veuillez ajouter des images pour commencer la conversion",
-      "formatDesc": {
-        "webp": "Recommandé universel, meilleure compatibilité",
-        "avif": "Format plus récent, compression supérieure",
-        "jpg": "Format classique, large compatibilité",
-        "png": "Format sans perte, prend en charge la transparence",
-        "heic": "Format efficace Apple (Safari requis)",
-        "svg": "Format vectoriel, intégrable en HTML"
-      }
-    },
-    "batchActions": {
-      "totalFiles": "Total des fichiers",
-      "converted": "Convertis",
-      "saved": "Enregistrés",
-      "downloadAll": "Tout télécharger (ZIP)",
-      "downloadSingle": "Télécharger chacun",
-      "clear": "Effacer"
-    },
-    "preview": {
-      "title": "Aperçu comparatif",
-      "original": "Original",
-      "converted": "Converti",
-      "originalSize": "Taille originale",
-      "convertedSize": "Après conversion",
-      "compression": "Compression"
-    }
-  },
-  "formatPage": {
-    "badge": "Tout format → {{format}}",
-    "title": "Convertir des images en {{format}},",
-    "highlight": "en un seul clic",
-    "features": {
-      "anyTo": "Tout format → {{format}}",
-      "local": "Traitement local, zéro téléchargement",
-      "batch": "Conversion par lots, gratuit"
-    }
-  },
-  "compare": {
-    "title": "Comparaison de formats",
-    "description": "Comparez visuellement les différences de qualité et de taille de fichier entre l'original, WebP et AVIF",
-    "dropHint": "Glissez une image ici pour commencer la comparaison",
-    "dropSub": "Prend en charge JPG, PNG, GIF et plus",
-    "webpCompare": "Comparaison WebP",
-    "avifCompare": "Comparaison AVIF",
-    "original": "Original",
-    "reselect": "Choisir une autre image",
-    "originalSize": "Taille originale"
-  },
-  "faq": {
-    "title": "Questions fréquentes",
-    "description": "Questions courantes sur WebP, AVIF et PixConvert",
-    "contactPrompt": "Pas de réponse trouvée ?",
-    "contactEmail": "contactez-nous",
-    "items": [
-      {
-        "q": "Qu'est-ce que le WebP ?",
-        "a": "Le WebP est un format d'image moderne développé par Google, offrant une compression avec et sans perte supérieure. Les images WebP sans perte sont 26% plus petites que le PNG, et les images WebP avec perte sont 25-34% plus petites que le JPEG à qualité équivalente."
-      },
-      {
-        "q": "Qu'est-ce que l'AVIF ? Comment se compare-t-il au WebP ?",
-        "a": "L'AVIF (AV1 Image File Format) est un format d'image de nouvelle génération basé sur le codec vidéo AV1. À qualité égale, l'AVIF est généralement 20-30% plus petit que le WebP, avec prise en charge du HDR et d'une gamme de couleurs plus large. Cependant, l'encodage AVIF est plus lent que le WebP et sa compatibilité navigateur est légèrement inférieure."
-      },
-      {
-        "q": "PixConvert est-il sûr ? Mes images sont-elles téléchargées ?",
-        "a": "Absolument sûr. Toute la conversion d'image se fait localement dans votre navigateur. Les images ne sont jamais téléchargées, stockées ou transmises à aucun serveur. C'est l'un des avantages clés de PixConvert par rapport aux autres outils en ligne."
-      },
-      {
-        "q": "Quels formats d'image sont pris en charge en entrée ?",
-        "a": "Prend en charge JPG, JPEG, PNG, GIF, SVG, ICO, BMP, HEIC, HEIF, TIFF, AVIF, WebP et d'autres formats courants."
-      },
-      {
-        "q": "Puis-je faire une conversion par lots ? Y a-t-il une limite ?",
-        "a": "Oui ! PixConvert prend en charge le traitement par lots sans limite théorique. Cependant, nous recommandons de ne pas dépasser 200 images à la fois pour maintenir des performances optimales du navigateur."
-      },
-      {
-        "q": "WebP et AVIF sont-ils pris en charge par tous les navigateurs ?",
-        "a": "WebP est pris en charge par plus de 96% des navigateurs (Chrome, Firefox, Safari, Edge). AVIF atteint environ 93% de prise en charge (Chrome, Firefox, Safari 16.0+). Pour les navigateurs non compatibles, nous recommandons d'utiliser la balise picture pour fournir une solution de repli."
-      },
-      {
-        "q": "La qualité d'image diminuera-t-elle après la conversion ?",
-        "a": "En mode avec perte, une légère dégradation de la qualité peut survenir selon votre réglage de qualité. Cependant, la plupart des gens ne distinguent pas les différences au-dessus de 80% de qualité. Vous pouvez également choisir le mode sans perte pour préserver la qualité originale."
-      },
-      {
-        "q": "PixConvert est-il totalement gratuit ?",
-        "a": "Oui, totalement gratuit ! PixConvert est un outil purement frontend sans coûts de serveur, il peut donc rester gratuit pour toujours."
-      }
-    ]
-  },
-  "lang": {
-    "en": "English",
-    "zh": "中文",
-    "ja": "日本語",
-    "fr": "Français",
-    "de": "Deutsch",
-    "es": "Español",
-    "pt": "Português",
-    "ru": "Русский",
-    "vi": "Tiếng Việt",
-    "ar": "العربية"
-  },
-  "share": {
-    "like": "Vous aimez ? Partagez !",
-    "facebook": "Partager sur Facebook",
-    "twitter": "Partager sur Twitter",
-    "reddit": "Partager sur Reddit"
-  },
-  "feedback": {
-    "title": "Envoyer un feedback",
-    "name": "Nom",
-    "namePlaceholder": "Votre nom",
-    "email": "Email",
-    "emailPlaceholder": "votre@email.com",
-    "subject": "Sujet",
-    "selectSubject": "Sélectionnez un sujet",
-    "subjectFeature": "Demande de fonctionnalité",
-    "subjectBug": "Rapport de bug",
-    "subjectQuestion": "Question",
-    "subjectOther": "Autre",
-    "message": "Message",
-    "messagePlaceholder": "Décrivez votre feedback...",
-    "send": "Envoyer le feedback",
-    "sending": "Envoi...",
-    "sent": "Feedback envoyé !",
-    "thankYou": "Merci pour votre feedback. Nous vous recontacterons bientôt.",
-    "close": "Fermer"
-  }
+﻿{
+    "nav":  {
+                "webpAvif":  "WebP/AVIF",
+                "toJpg":  "Vers JPG",
+                "toPng":  "Vers PNG",
+                "toHeic":  "Vers HEIC",
+                "toSvg":  "Vers SVG",
+                "compare":  "Comparer",
+                "faq":  "FAQ",
+                "feedback":  "Feedback"
+            },
+    "header":  {
+                   "title":  "PixConvert"
+               },
+    "footer":  {
+                   "tagline":  "PixConvert - Convertisseur gratuit de formats d\u0027image",
+                   "faq":  "FAQ",
+                   "contact":  "Contact",
+                   "github":  "GitHub",
+                   "madeWith":  "Fait avec",
+                   "privacy":  "Tout le traitement d\u0027image s\u0027effectue localement dans votre navigateur. Rien n\u0027est téléchargé sur aucun serveur.",
+                   "desktopApp":  "App Desktop"
+               },
+    "hero":  {
+                 "badge":  "Convertisseur d\u0027image nouvelle génération",
+                 "title":  "La conversion d\u0027image,",
+                 "highlight":  "plus simple que jamais",
+                 "description":  "PixConvert prend en charge la sortie double format WebP et AVIF, la conversion par lots, le tout traité localement dans votre navigateur — sans téléchargement, pour protéger votre vie privée.",
+                 "startConvert":  "Commencer la conversion",
+                 "features":  {
+                                  "dualFormat":  "Double format WebP + AVIF",
+                                  "localProcessing":  "Traitement local, zéro téléchargement",
+                                  "batchFree":  "Conversion par lots, gratuit pour toujours"
+                              }
+             },
+    "home":  {
+                 "advantageTitle":  "Pourquoi choisir PixConvert",
+                 "advantages":  [
+                                    {
+                                        "tag":  "Exclusif",
+                                        "title":  "Double format WebP + AVIF",
+                                        "desc":  "Prend en charge les formats d\u0027image modernes WebP et AVIF. L\u0027AVIF est en moyenne 30% plus léger que le WebP, répondant aux besoins de différents scénarios."
+                                    },
+                                    {
+                                        "tag":  "Sécurisé",
+                                        "title":  "Traitement 100% local dans le navigateur",
+                                        "desc":  "Toutes les conversions se font dans votre navigateur. Les images ne sont jamais téléchargées sur un serveur, protégeant totalement votre vie privée et conforme au RGPD (GDPR)."
+                                    },
+                                    {
+                                        "tag":  "Efficace",
+                                        "title":  "Traitement par lots + aperçu en direct",
+                                        "desc":  "Traitez des centaines d\u0027images simultanément avec un aperçu en temps réel et une comparaison par curseur pour visualiser les résultats de conversion."
+                                    }
+                                ]
+             },
+    "converter":  {
+                      "upload":  {
+                                     "title":  "Glissez-déposez vos images ici, ou cliquez pour télécharger",
+                                     "hint":  "Prend en charge JPG, PNG, GIF, SVG, ICO, BMP, HEIC, TIFF, AVIF, WebP",
+                                     "addMore":  "Cliquez pour ajouter d\u0027autres fichiers"
+                                 },
+                      "fileList":  {
+                                       "filesAdded":  "fichiers ajoutés",
+                                       "convertFailed":  "Échec de la conversion",
+                                       "clearAll":  "Tout effacer"
+                                   },
+                      "settings":  {
+                                       "title":  "Paramètres de conversion",
+                                       "outputFormat":  "Format de sortie",
+                                       "preset":  "Préréglage",
+                                       "presets":  {
+                                                       "extreme":  "Extrême",
+                                                       "balanced":  "Équilibré",
+                                                       "maxQuality":  "Qualité maximale"
+                                                   },
+                                       "quality":  "Qualité",
+                                       "size":  "Échelle de taille",
+                                       "advanced":  "Options avancées",
+                                       "mode":  "Mode de conversion",
+                                       "lossy":  "Avec perte",
+                                       "lossless":  "Sans perte",
+                                       "metadata":  "Conserver les métadonnées (EXIF)",
+                                       "addFilesFirst":  "Veuillez ajouter des images pour commencer la conversion",
+                                       "formatDesc":  {
+                                                          "webp":  "Recommandé universel, meilleure compatibilité",
+                                                          "avif":  "Format plus récent, compression supérieure",
+                                                          "jpg":  "Format classique, large compatibilité",
+                                                          "png":  "Format sans perte, prend en charge la transparence",
+                                                          "heic":  "Format efficace Apple (Safari requis)",
+                                                          "svg":  "Format vectoriel, intégrable en HTML"
+                                                      }
+                                   },
+                      "batchActions":  {
+                                           "totalFiles":  "Total des fichiers",
+                                           "converted":  "Convertis",
+                                           "saved":  "Enregistrés",
+                                           "downloadAll":  "Tout télécharger (ZIP)",
+                                           "downloadSingle":  "Télécharger chacun",
+                                           "clear":  "Effacer"
+                                       },
+                      "preview":  {
+                                      "title":  "Aperçu comparatif",
+                                      "original":  "Original",
+                                      "converted":  "Converti",
+                                      "originalSize":  "Taille originale",
+                                      "convertedSize":  "Après conversion",
+                                      "compression":  "Compression"
+                                  }
+                  },
+    "formatPage":  {
+                       "badge":  "Tout format → {{format}}",
+                       "title":  "Convertir des images en {{format}},",
+                       "highlight":  "en un seul clic",
+                       "features":  {
+                                        "anyTo":  "Tout format → {{format}}",
+                                        "local":  "Traitement local, zéro téléchargement",
+                                        "batch":  "Conversion par lots, gratuit"
+                                    }
+                   },
+    "compare":  {
+                    "title":  "Comparaison de formats",
+                    "description":  "Comparez visuellement les différences de qualité et de taille de fichier entre l\u0027original, WebP et AVIF",
+                    "dropHint":  "Glissez une image ici pour commencer la comparaison",
+                    "dropSub":  "Prend en charge JPG, PNG, GIF et plus",
+                    "webpCompare":  "Comparaison WebP",
+                    "avifCompare":  "Comparaison AVIF",
+                    "original":  "Original",
+                    "reselect":  "Choisir une autre image",
+                    "originalSize":  "Taille originale"
+                },
+    "faq":  {
+                "title":  "Questions fréquentes",
+                "description":  "Questions courantes sur WebP, AVIF et PixConvert",
+                "contactPrompt":  "Pas de réponse trouvée ?",
+                "contactEmail":  "contactez-nous",
+                "items":  [
+                              {
+                                  "q":  "Qu\u0027est-ce que le WebP ?",
+                                  "a":  "Le WebP est un format d\u0027image moderne développé par Google, offrant une compression avec et sans perte supérieure. Les images WebP sans perte sont 26% plus petites que le PNG, et les images WebP avec perte sont 25-34% plus petites que le JPEG à qualité équivalente."
+                              },
+                              {
+                                  "q":  "Qu\u0027est-ce que l\u0027AVIF ? Comment se compare-t-il au WebP ?",
+                                  "a":  "L\u0027AVIF (AV1 Image File Format) est un format d\u0027image de nouvelle génération basé sur le codec vidéo AV1. À qualité égale, l\u0027AVIF est généralement 20-30% plus petit que le WebP, avec prise en charge du HDR et d\u0027une gamme de couleurs plus large. Cependant, l\u0027encodage AVIF est plus lent que le WebP et sa compatibilité navigateur est légèrement inférieure."
+                              },
+                              {
+                                  "q":  "PixConvert est-il sûr ? Mes images sont-elles téléchargées ?",
+                                  "a":  "Absolument sûr. Toute la conversion d\u0027image se fait localement dans votre navigateur. Les images ne sont jamais téléchargées, stockées ou transmises à aucun serveur. C\u0027est l\u0027un des avantages clés de PixConvert par rapport aux autres outils en ligne."
+                              },
+                              {
+                                  "q":  "Quels formats d\u0027image sont pris en charge en entrée ?",
+                                  "a":  "Prend en charge JPG, JPEG, PNG, GIF, SVG, ICO, BMP, HEIC, HEIF, TIFF, AVIF, WebP et d\u0027autres formats courants."
+                              },
+                              {
+                                  "q":  "Puis-je faire une conversion par lots ? Y a-t-il une limite ?",
+                                  "a":  "Oui ! PixConvert prend en charge le traitement par lots sans limite théorique. Cependant, nous recommandons de ne pas dépasser 200 images à la fois pour maintenir des performances optimales du navigateur."
+                              },
+                              {
+                                  "q":  "WebP et AVIF sont-ils pris en charge par tous les navigateurs ?",
+                                  "a":  "WebP est pris en charge par plus de 96% des navigateurs (Chrome, Firefox, Safari, Edge). AVIF atteint environ 93% de prise en charge (Chrome, Firefox, Safari 16.0+). Pour les navigateurs non compatibles, nous recommandons d\u0027utiliser la balise picture pour fournir une solution de repli."
+                              },
+                              {
+                                  "q":  "La qualité d\u0027image diminuera-t-elle après la conversion ?",
+                                  "a":  "En mode avec perte, une légère dégradation de la qualité peut survenir selon votre réglage de qualité. Cependant, la plupart des gens ne distinguent pas les différences au-dessus de 80% de qualité. Vous pouvez également choisir le mode sans perte pour préserver la qualité originale."
+                              },
+                              {
+                                  "q":  "PixConvert est-il totalement gratuit ?",
+                                  "a":  "Oui, totalement gratuit ! PixConvert est un outil purement frontend sans coûts de serveur, il peut donc rester gratuit pour toujours."
+                              }
+                          ]
+            },
+    "lang":  {
+                 "en":  "English",
+                 "zh":  "中文",
+                 "ja":  "日本語",
+                 "fr":  "Français",
+                 "de":  "Deutsch",
+                 "es":  "Español",
+                 "pt":  "Português",
+                 "ru":  "Русский",
+                 "vi":  "Tiếng Việt",
+                 "ar":  "العربية"
+             },
+    "share":  {
+                  "like":  "Vous aimez ? Partagez !",
+                  "facebook":  "Partager sur Facebook",
+                  "twitter":  "Partager sur Twitter",
+                  "reddit":  "Partager sur Reddit"
+              },
+    "feedback":  {
+                     "title":  "Envoyer un feedback",
+                     "name":  "Nom",
+                     "namePlaceholder":  "Votre nom",
+                     "email":  "Email",
+                     "emailPlaceholder":  "votre@email.com",
+                     "subject":  "Sujet",
+                     "selectSubject":  "Sélectionnez un sujet",
+                     "subjectFeature":  "Demande de fonctionnalité",
+                     "subjectBug":  "Rapport de bug",
+                     "subjectQuestion":  "Question",
+                     "subjectOther":  "Autre",
+                     "message":  "Message",
+                     "messagePlaceholder":  "Décrivez votre feedback...",
+                     "send":  "Envoyer le feedback",
+                     "sending":  "Envoi...",
+                     "sent":  "Feedback envoyé !",
+                     "thankYou":  "Merci pour votre feedback. Nous vous recontacterons bientôt.",
+                     "close":  "Fermer"
+                 },
+    "desktop":  {
+                    "badge":  "Application Bureau",
+                    "title":  "Télécharger PixConvert Desktop",
+                    "subtitle":  "Plus rapide, plus stable, fonctionne hors ligne",
+                    "description":  "Téléchargez la version Windows desktop pour de meilleures performances, une intégration système et une utilisation hors ligne. Même approche axée sur la confidentialité — tout le traitement se fait sur votre machine.",
+                    "downloadBtn":  "Télécharger pour Windows",
+                    "version":  "v0.1.0",
+                    "size":  "4 MB",
+                    "platform":  "Windows x64",
+                    "features":  [
+                                     {
+                                         "desc":  "Performance native, sans surcharge navigateur",
+                                         "title":  "Ultra Rapide"
+                                     },
+                                     {
+                                         "desc":  "Aucune connexion internet requise",
+                                         "title":  "Hors Ligne"
+                                     },
+                                     {
+                                         "desc":  "Conversion par clic droit depuis l\u0027explorateur",
+                                         "title":  "Intégration Système"
+                                     }
+                                 ]
+                }
 }

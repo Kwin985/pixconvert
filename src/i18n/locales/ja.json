@@ -1,208 +1,233 @@
-{
-  "nav": {
-    "webpAvif": "WebP/AVIF",
-    "toJpg": "JPGへ変換",
-    "toPng": "PNGへ変換",
-    "toHeic": "HEICへ変換",
-    "toSvg": "SVGへ",
-    "compare": "比較",
-    "faq": "FAQ",
-    "feedback": "フィードバック"
-  },
-  "header": {
-    "title": "PixConvert"
-  },
-  "footer": {
-    "tagline": "PixConvert - 無料画像フォーマット変換ツール",
-    "faq": "FAQ",
-    "contact": "お問い合わせ",
-    "github": "GitHub",
-    "madeWith": "で作られました",
-    "privacy": "すべての画像処理はブラウザ内でローカルに行われます。サーバーにアップロードされることは一切ありません。"
-  },
-  "hero": {
-    "badge": "次世代画像フォーマット変換ツール",
-    "title": "画像変換が、",
-    "highlight": "かつてないほど簡単に",
-    "description": "PixConvertはWebPとAVIFのデュアルフォーマット出力、バッチ変換に対応し、すべての処理はブラウザ内で完結。アップロード不要でプライバシーを守ります。",
-    "startConvert": "変換を始める",
-    "features": {
-      "dualFormat": "WebP + AVIF デュアルフォーマット",
-      "localProcessing": "ローカル処理、アップロードゼロ",
-      "batchFree": "バッチ変換、永久無料"
-    }
-  },
-  "home": {
-    "advantageTitle": "PixConvertが選ばれる理由",
-    "advantages": [
-      {
-        "tag": "独自",
-        "title": "WebP + AVIF デュアルフォーマット",
-        "desc": "WebPとAVIFの両方の最新画像フォーマットに対応。AVIFはWebPより平均30%小さく、さまざまなシーンのニーズに対応します。"
-      },
-      {
-        "tag": "安全",
-        "title": "100%ブラウザローカル処理",
-        "desc": "すべての変換はブラウザ内で行われます。画像がサーバーにアップロードされることは一切なく、プライバシーを完全に保護し、GDPRに準拠しています。"
-      },
-      {
-        "tag": "効率的",
-        "title": "バッチ処理 + ライブプレビュー",
-        "desc": "数百枚の画像を同時に処理し、リアルタイムプレビューとスライダー比較で変換結果を視覚的に確認できます。"
-      }
-    ]
-  },
-  "converter": {
-    "upload": {
-      "title": "画像をここにドラッグ＆ドロップ、またはクリックしてアップロード",
-      "hint": "JPG、PNG、GIF、SVG、ICO、BMP、HEIC、TIFF、AVIF、WebPに対応",
-      "addMore": "クリックしてファイルを追加"
-    },
-    "fileList": {
-      "filesAdded": "ファイル追加済み",
-      "convertFailed": "変換に失敗しました",
-      "clearAll": "すべてクリア"
-    },
-    "settings": {
-      "title": "変換設定",
-      "outputFormat": "出力フォーマット",
-      "preset": "プリセット",
-      "presets": {
-        "extreme": "最大圧縮",
-        "balanced": "バランス",
-        "maxQuality": "最高品質"
-      },
-      "quality": "品質",
-      "size": "サイズスケール",
-      "advanced": "詳細オプション",
-      "mode": "変換モード",
-      "lossy": "非可逆",
-      "lossless": "可逆",
-      "metadata": "メタデータ（EXIF）を保持",
-      "addFilesFirst": "変換を開始するには画像を追加してください",
-      "formatDesc": {
-        "webp": "汎用推奨、最高の互換性",
-        "avif": "より新しいフォーマット、より高い圧縮率",
-        "jpg": "クラシックフォーマット、幅広い互換性",
-        "png": "可逆フォーマット、透過対応",
-        "heic": "Apple高効率フォーマット（Safari必須）",
-        "svg": "ベクターフォーマット、HTMLに埋め込み可能"
-      }
-    },
-    "batchActions": {
-      "totalFiles": "総ファイル数",
-      "converted": "変換済み",
-      "saved": "保存済み",
-      "downloadAll": "すべてダウンロード（ZIP）",
-      "downloadSingle": "個別ダウンロード",
-      "clear": "クリア"
-    },
-    "preview": {
-      "title": "プレビュー比較",
-      "original": "元画像",
-      "converted": "変換後",
-      "originalSize": "元のサイズ",
-      "convertedSize": "変換後",
-      "compression": "圧縮率"
-    }
-  },
-  "formatPage": {
-    "badge": "任意のフォーマット → {{format}} 変換",
-    "title": "画像を{{format}}に変換、",
-    "highlight": "ワンクリックで完了",
-    "features": {
-      "anyTo": "任意のフォーマット → {{format}}",
-      "local": "ローカル処理、アップロードゼロ",
-      "batch": "バッチ変換、無料"
-    }
-  },
-  "compare": {
-    "title": "フォーマット比較",
-    "description": "元画像、WebP、AVIFの品質とファイルサイズの違いを視覚的に比較",
-    "dropHint": "画像をここにドラッグして比較を開始",
-    "dropSub": "JPG、PNG、GIFなどに対応",
-    "webpCompare": "WebP比較",
-    "avifCompare": "AVIF比較",
-    "original": "元画像",
-    "reselect": "別の画像を選択",
-    "originalSize": "元のサイズ"
-  },
-  "faq": {
-    "title": "よくある質問",
-    "description": "WebP、AVIF、PixConvertに関するよくある質問",
-    "contactPrompt": "答えが見つからない？",
-    "contactEmail": "お問い合わせ",
-    "items": [
-      {
-        "q": "WebPとは何ですか？",
-        "a": "WebPはGoogleが開発した最新の画像フォーマットで、優れた非可逆・可逆圧縮を提供します。WebP可逆画像はPNGより26%小さく、WebP非可逆画像は同等品質のJPEGより25〜34%小さくなります。"
-      },
-      {
-        "q": "AVIFとは何ですか？WebPとの比較は？",
-        "a": "AVIF（AV1 Image File Format）は、AV1動画コーデックをベースにした次世代画像フォーマットです。同じ品質でAVIFは通常WebPより20〜30%小さく、HDRとより広い色域に対応しています。ただし、AVIFのエンコードはWebPより遅く、ブラウザの互換性もわずかに低くなります。"
-      },
-      {
-        "q": "PixConvertは安全ですか？画像はアップロードされますか？",
-        "a": "完全に安全です。すべての画像変換はブラウザ内でローカルに行われます。画像がサーバーにアップロードされたり、保存されたり、送信されたりすることは一切ありません。これは他のオンラインツールに対するPixConvertの最大の利点の一つです。"
-      },
-      {
-        "q": "入力可能な画像フォーマットは？",
-        "a": "JPG、JPEG、PNG、GIF、SVG、ICO、BMP、HEIC、HEIF、TIFF、AVIF、WebPなどの主要フォーマットに対応しています。"
-      },
-      {
-        "q": "バッチ変換は可能ですか？制限はありますか？",
-        "a": "はい！PixConvertはバッチ処理に対応しており、理論上は無制限です。ただし、ブラウザの最適なパフォーマンスを維持するため、一度に200枚以下を推奨します。"
-      },
-      {
-        "q": "WebPとAVIFはすべてのブラウザでサポートされていますか？",
-        "a": "WebPは96%以上のブラウザでサポートされています（Chrome、Firefox、Safari、Edge）。AVIFは約93%のサポート率です（Chrome、Firefox、Safari 16.0以降）。非対応ブラウザの場合は、pictureタグでフォールバックを提供することをお勧めします。"
-      },
-      {
-        "q": "変換後に画質は低下しますか？",
-        "a": "非可逆モードでは、品質設定に応じてわずかな画質低下が生じる場合があります。ただし、品質80%以上ではほとんどの人が違いを区別できません。元の品質を保つために可逆モードを選択することもできます。"
-      },
-      {
-        "q": "PixConvertは完全に無料ですか？",
-        "a": "はい、完全無料です！PixConvertは純粋なフロントエンドツールであり、サーバーコストがかからないため、永久に無料で提供できます。"
-      }
-    ]
-  },
-  "lang": {
-    "en": "English",
-    "zh": "中文",
-    "ja": "日本語",
-    "fr": "Français",
-    "de": "Deutsch",
-    "es": "Español",
-    "pt": "Português",
-    "ru": "Русский",
-    "vi": "Tiếng Việt",
-    "ar": "العربية"
-  },
-  "share": {
-    "like": "気に入ったらシェア！",
-    "facebook": "Facebookでシェア",
-    "twitter": "Twitterでシェア",
-    "reddit": "Redditでシェア"
-  },
-  "feedback": {
-    "title": "フィードバックを送信",
-    "name": "名前",
-    "namePlaceholder": "あなたの名前",
-    "email": "メール",
-    "emailPlaceholder": "your@email.com",
-    "subject": "件名",
-    "selectSubject": "件名を選択",
-    "subjectFeature": "機能リクエスト",
-    "subjectBug": "バグ報告",
-    "subjectQuestion": "質問",
-    "subjectOther": "その他",
-    "message": "メッセージ",
-    "messagePlaceholder": "フィードバックを記述...",
-    "send": "フィードバックを送信",
-    "sending": "送信中...",
-    "sent": "フィードバック送信完了！",
-    "thankYou": "フィードバックありがとうございます。すぐにご連絡します。",
-    "close": "閉じる"
-  }
+﻿{
+    "nav":  {
+                "webpAvif":  "WebP/AVIF",
+                "toJpg":  "JPGへ変換",
+                "toPng":  "PNGへ変換",
+                "toHeic":  "HEICへ変換",
+                "toSvg":  "SVGへ",
+                "compare":  "比較",
+                "faq":  "FAQ",
+                "feedback":  "フィードバック"
+            },
+    "header":  {
+                   "title":  "PixConvert"
+               },
+    "footer":  {
+                   "tagline":  "PixConvert - 無料画像フォーマット変換ツール",
+                   "faq":  "FAQ",
+                   "contact":  "お問い合わせ",
+                   "github":  "GitHub",
+                   "madeWith":  "で作られました",
+                   "privacy":  "すべての画像処理はブラウザ内でローカルに行われます。サーバーにアップロードされることは一切ありません。",
+                   "desktopApp":  "デスクトップアプリ"
+               },
+    "hero":  {
+                 "badge":  "次世代画像フォーマット変換ツール",
+                 "title":  "画像変換が、",
+                 "highlight":  "かつてないほど簡単に",
+                 "description":  "PixConvertはWebPとAVIFのデュアルフォーマット出力、バッチ変換に対応し、すべての処理はブラウザ内で完結。アップロード不要でプライバシーを守ります。",
+                 "startConvert":  "変換を始める",
+                 "features":  {
+                                  "dualFormat":  "WebP + AVIF デュアルフォーマット",
+                                  "localProcessing":  "ローカル処理、アップロードゼロ",
+                                  "batchFree":  "バッチ変換、永久無料"
+                              }
+             },
+    "home":  {
+                 "advantageTitle":  "PixConvertが選ばれる理由",
+                 "advantages":  [
+                                    {
+                                        "tag":  "独自",
+                                        "title":  "WebP + AVIF デュアルフォーマット",
+                                        "desc":  "WebPとAVIFの両方の最新画像フォーマットに対応。AVIFはWebPより平均30%小さく、さまざまなシーンのニーズに対応します。"
+                                    },
+                                    {
+                                        "tag":  "安全",
+                                        "title":  "100%ブラウザローカル処理",
+                                        "desc":  "すべての変換はブラウザ内で行われます。画像がサーバーにアップロードされることは一切なく、プライバシーを完全に保護し、GDPRに準拠しています。"
+                                    },
+                                    {
+                                        "tag":  "効率的",
+                                        "title":  "バッチ処理 + ライブプレビュー",
+                                        "desc":  "数百枚の画像を同時に処理し、リアルタイムプレビューとスライダー比較で変換結果を視覚的に確認できます。"
+                                    }
+                                ]
+             },
+    "converter":  {
+                      "upload":  {
+                                     "title":  "画像をここにドラッグ＆ドロップ、またはクリックしてアップロード",
+                                     "hint":  "JPG、PNG、GIF、SVG、ICO、BMP、HEIC、TIFF、AVIF、WebPに対応",
+                                     "addMore":  "クリックしてファイルを追加"
+                                 },
+                      "fileList":  {
+                                       "filesAdded":  "ファイル追加済み",
+                                       "convertFailed":  "変換に失敗しました",
+                                       "clearAll":  "すべてクリア"
+                                   },
+                      "settings":  {
+                                       "title":  "変換設定",
+                                       "outputFormat":  "出力フォーマット",
+                                       "preset":  "プリセット",
+                                       "presets":  {
+                                                       "extreme":  "最大圧縮",
+                                                       "balanced":  "バランス",
+                                                       "maxQuality":  "最高品質"
+                                                   },
+                                       "quality":  "品質",
+                                       "size":  "サイズスケール",
+                                       "advanced":  "詳細オプション",
+                                       "mode":  "変換モード",
+                                       "lossy":  "非可逆",
+                                       "lossless":  "可逆",
+                                       "metadata":  "メタデータ（EXIF）を保持",
+                                       "addFilesFirst":  "変換を開始するには画像を追加してください",
+                                       "formatDesc":  {
+                                                          "webp":  "汎用推奨、最高の互換性",
+                                                          "avif":  "より新しいフォーマット、より高い圧縮率",
+                                                          "jpg":  "クラシックフォーマット、幅広い互換性",
+                                                          "png":  "可逆フォーマット、透過対応",
+                                                          "heic":  "Apple高効率フォーマット（Safari必須）",
+                                                          "svg":  "ベクターフォーマット、HTMLに埋め込み可能"
+                                                      }
+                                   },
+                      "batchActions":  {
+                                           "totalFiles":  "総ファイル数",
+                                           "converted":  "変換済み",
+                                           "saved":  "保存済み",
+                                           "downloadAll":  "すべてダウンロード（ZIP）",
+                                           "downloadSingle":  "個別ダウンロード",
+                                           "clear":  "クリア"
+                                       },
+                      "preview":  {
+                                      "title":  "プレビュー比較",
+                                      "original":  "元画像",
+                                      "converted":  "変換後",
+                                      "originalSize":  "元のサイズ",
+                                      "convertedSize":  "変換後",
+                                      "compression":  "圧縮率"
+                                  }
+                  },
+    "formatPage":  {
+                       "badge":  "任意のフォーマット → {{format}} 変換",
+                       "title":  "画像を{{format}}に変換、",
+                       "highlight":  "ワンクリックで完了",
+                       "features":  {
+                                        "anyTo":  "任意のフォーマット → {{format}}",
+                                        "local":  "ローカル処理、アップロードゼロ",
+                                        "batch":  "バッチ変換、無料"
+                                    }
+                   },
+    "compare":  {
+                    "title":  "フォーマット比較",
+                    "description":  "元画像、WebP、AVIFの品質とファイルサイズの違いを視覚的に比較",
+                    "dropHint":  "画像をここにドラッグして比較を開始",
+                    "dropSub":  "JPG、PNG、GIFなどに対応",
+                    "webpCompare":  "WebP比較",
+                    "avifCompare":  "AVIF比較",
+                    "original":  "元画像",
+                    "reselect":  "別の画像を選択",
+                    "originalSize":  "元のサイズ"
+                },
+    "faq":  {
+                "title":  "よくある質問",
+                "description":  "WebP、AVIF、PixConvertに関するよくある質問",
+                "contactPrompt":  "答えが見つからない？",
+                "contactEmail":  "お問い合わせ",
+                "items":  [
+                              {
+                                  "q":  "WebPとは何ですか？",
+                                  "a":  "WebPはGoogleが開発した最新の画像フォーマットで、優れた非可逆・可逆圧縮を提供します。WebP可逆画像はPNGより26%小さく、WebP非可逆画像は同等品質のJPEGより25〜34%小さくなります。"
+                              },
+                              {
+                                  "q":  "AVIFとは何ですか？WebPとの比較は？",
+                                  "a":  "AVIF（AV1 Image File Format）は、AV1動画コーデックをベースにした次世代画像フォーマットです。同じ品質でAVIFは通常WebPより20〜30%小さく、HDRとより広い色域に対応しています。ただし、AVIFのエンコードはWebPより遅く、ブラウザの互換性もわずかに低くなります。"
+                              },
+                              {
+                                  "q":  "PixConvertは安全ですか？画像はアップロードされますか？",
+                                  "a":  "完全に安全です。すべての画像変換はブラウザ内でローカルに行われます。画像がサーバーにアップロードされたり、保存されたり、送信されたりすることは一切ありません。これは他のオンラインツールに対するPixConvertの最大の利点の一つです。"
+                              },
+                              {
+                                  "q":  "入力可能な画像フォーマットは？",
+                                  "a":  "JPG、JPEG、PNG、GIF、SVG、ICO、BMP、HEIC、HEIF、TIFF、AVIF、WebPなどの主要フォーマットに対応しています。"
+                              },
+                              {
+                                  "q":  "バッチ変換は可能ですか？制限はありますか？",
+                                  "a":  "はい！PixConvertはバッチ処理に対応しており、理論上は無制限です。ただし、ブラウザの最適なパフォーマンスを維持するため、一度に200枚以下を推奨します。"
+                              },
+                              {
+                                  "q":  "WebPとAVIFはすべてのブラウザでサポートされていますか？",
+                                  "a":  "WebPは96%以上のブラウザでサポートされています（Chrome、Firefox、Safari、Edge）。AVIFは約93%のサポート率です（Chrome、Firefox、Safari 16.0以降）。非対応ブラウザの場合は、pictureタグでフォールバックを提供することをお勧めします。"
+                              },
+                              {
+                                  "q":  "変換後に画質は低下しますか？",
+                                  "a":  "非可逆モードでは、品質設定に応じてわずかな画質低下が生じる場合があります。ただし、品質80%以上ではほとんどの人が違いを区別できません。元の品質を保つために可逆モードを選択することもできます。"
+                              },
+                              {
+                                  "q":  "PixConvertは完全に無料ですか？",
+                                  "a":  "はい、完全無料です！PixConvertは純粋なフロントエンドツールであり、サーバーコストがかからないため、永久に無料で提供できます。"
+                              }
+                          ]
+            },
+    "lang":  {
+                 "en":  "English",
+                 "zh":  "中文",
+                 "ja":  "日本語",
+                 "fr":  "Français",
+                 "de":  "Deutsch",
+                 "es":  "Español",
+                 "pt":  "Português",
+                 "ru":  "Русский",
+                 "vi":  "Tiếng Việt",
+                 "ar":  "العربية"
+             },
+    "share":  {
+                  "like":  "気に入ったらシェア！",
+                  "facebook":  "Facebookでシェア",
+                  "twitter":  "Twitterでシェア",
+                  "reddit":  "Redditでシェア"
+              },
+    "feedback":  {
+                     "title":  "フィードバックを送信",
+                     "name":  "名前",
+                     "namePlaceholder":  "あなたの名前",
+                     "email":  "メール",
+                     "emailPlaceholder":  "your@email.com",
+                     "subject":  "件名",
+                     "selectSubject":  "件名を選択",
+                     "subjectFeature":  "機能リクエスト",
+                     "subjectBug":  "バグ報告",
+                     "subjectQuestion":  "質問",
+                     "subjectOther":  "その他",
+                     "message":  "メッセージ",
+                     "messagePlaceholder":  "フィードバックを記述...",
+                     "send":  "フィードバックを送信",
+                     "sending":  "送信中...",
+                     "sent":  "フィードバック送信完了！",
+                     "thankYou":  "フィードバックありがとうございます。すぐにご連絡します。",
+                     "close":  "閉じる"
+                 },
+    "desktop":  {
+                    "badge":  "デスクトップアプリ",
+                    "title":  "PixConvert デスクトップ版をダウンロード",
+                    "subtitle":  "より速く、より安定、オフラインでも使用可能",
+                    "description":  "Windows デスクトップ版をダウンロードして、よりスムーズなパフォーマンス、システム統合、オフライン利用をお楽しみください。プライバシーファーストのアプローチは同じです — すべての処理はローカルで実行されます。",
+                    "downloadBtn":  "Windows 版をダウンロード",
+                    "version":  "v0.1.0",
+                    "size":  "4 MB",
+                    "platform":  "Windows x64",
+                    "features":  [
+                                     {
+                                         "desc":  "ネイティブ性能、ブラウザのオーバーヘッドなし",
+                                         "title":  "超高速パフォーマンス"
+                                     },
+                                     {
+                                         "desc":  "インターネット接続不要",
+                                         "title":  "オフライン対応"
+                                     },
+                                     {
+                                         "desc":  "エクスプローラーの右クリックで即変換",
+                                         "title":  "システム統合"
+                                     }
+                                 ]
+                }
 }

@@ -5,6 +5,11 @@ import { useTranslation } from 'react-i18next';
 import { useConverterStore } from '@/store/useConverterStore';
 import SEO, { faqPageSchema, breadcrumbSchema } from '@/components/SEO';
 
+const EMAIL_USER = 'mdvrinsider';
+const EMAIL_DOMAIN = 'gmail.com';
+const EMAIL_FULL = `${EMAIL_USER}@${EMAIL_DOMAIN}`;
+const EMAIL_MAILTO = `mailto:${EMAIL_FULL}`;
+
 export default function FAQPage() {
   const isDark = useConverterStore((s) => s.isDark);
   const { t } = useTranslation();
@@ -39,7 +44,7 @@ export default function FAQPage() {
         </p>
         <p className={`mt-4 text-sm ${isDark ? 'text-gray-500' : 'text-gray-400'}`}>
           {t('faq.contactPrompt')}{' '}
-          <a href="mailto:mdvrinsider@gmail.com" className="text-neon hover:underline">
+          <a href={EMAIL_MAILTO} className="text-neon hover:underline">
             {t('faq.contactEmail')}
           </a>
         </p>

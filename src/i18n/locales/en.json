@@ -17,8 +17,33 @@
     "faq": "FAQ",
     "contact": "Contact",
     "github": "GitHub",
+    "desktopApp": "Desktop App",
     "madeWith": "Made with",
     "privacy": "All image processing is done locally in your browser. Nothing is uploaded to any server."
+  },
+  "desktop": {
+    "badge": "Desktop App",
+    "title": "Get PixConvert Desktop",
+    "subtitle": "Faster, more stable, work offline",
+    "description": "Download the Windows desktop version for better performance, system integration, and offline usage. Same privacy-first approach — all processing stays on your machine.",
+    "downloadBtn": "Download for Windows",
+    "version": "v0.1.0",
+    "size": "4 MB",
+    "platform": "Windows x64",
+    "features": [
+      {
+        "title": "Lightning Fast",
+        "desc": "Native performance, no browser overhead"
+      },
+      {
+        "title": "Work Offline",
+        "desc": "No internet connection required"
+      },
+      {
+        "title": "System Integration",
+        "desc": "Right-click convert from File Explorer"
+      }
+    ]
   },
   "hero": {
     "badge": "Next-Gen Image Format Converter",

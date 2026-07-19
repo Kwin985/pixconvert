@@ -1,8 +1,14 @@
-import { Link } from 'react-router-dom';
-import { Github, Heart, Mail } from 'lucide-react';
+﻿import { Link } from 'react-router-dom';
+import { Github, Heart, Mail, Download } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useConverterStore } from '@/store/useConverterStore';
 import ShareButtons from '@/components/ShareButtons';
+
+const EMAIL_USER = 'mdvrinsider';
+const EMAIL_DOMAIN = 'gmail.com';
+const EMAIL_FULL = `${EMAIL_USER}@${EMAIL_DOMAIN}`;
+const EMAIL_MAILTO = `mailto:$\{EMAIL_FULL\}`;
+const DESKTOP_DOWNLOAD_URL = '/downloads/PixConvert_0.1.0_x64-setup.exe';
 
 export default function Footer() {
   const isDark = useConverterStore((s) => s.isDark);
@@ -28,11 +34,13 @@ export default function Footer() {
               {t('footer.faq')}
             </Link>
             <a
-              href="mailto:mdvrinsider@gmail.com"
-              className={`flex items-center gap-1 text-sm hover:text-neon transition-colors ${isDark ? 'text-gray-400' : 'text-gray-500'}`}
+              href={EMAIL_MAILTO}
+              className={`flex items-center gap-1.5 text-sm hover:text-neon transition-colors ${isDark ? 'text-gray-400' : 'text-gray-500'}`}
+              title={EMAIL_FULL}
             >
               <Mail className="w-4 h-4" />
-              {t('footer.contact')}
+              <span className="font-mono text-xs hidden sm:inline">{EMAIL_FULL}</span>
+              <span className="sm:hidden">{t('footer.contact')}</span>
             </a>
             <a
               href="https://github.com"
@@ -56,3 +64,4 @@ export default function Footer() {
     </footer>
   );
 }
+
