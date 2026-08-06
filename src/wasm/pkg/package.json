@@ -1,0 +1,16 @@
+{
+  "name": "vtracer-wasm",
+  "type": "module",
+  "description": "WebAssembly wrapper for vtracer image-to-SVG conversion",
+  "version": "0.1.0",
+  "files": [
+    "vtracer_wasm_bg.wasm",
+    "vtracer_wasm.js",
+    "vtracer_wasm.d.ts"
+  ],
+  "main": "vtracer_wasm.js",
+  "types": "vtracer_wasm.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

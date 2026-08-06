@@ -2,6 +2,51 @@ import { useCallback } from 'react';
 import type { ConversionTask, ConversionSettings, ConversionResult } from '@/types';
 import { FORMAT_MIME, FORMAT_LABEL } from '@/types';
 
+// SVG 矢量化转换 Worker（单例，懒加载）
+let svgWorker: Worker | null = null;
+
+function getSvgWorker(): Worker {
+  if (!svgWorker) {
+    svgWorker = new Worker(
+      new URL('../workers/svgConverter.worker.ts', import.meta.url),
+      { type: 'module' }
+    );
+  }
+  return svgWorker;
+}
+
+/**
+ * 通过 Web Worker 调用 vtracer WASM 执行真正的矢量化描摹
+ * 像素数据通过 transferable 零拷贝传输
+ */
+function convertSvgInWorker(
+  pixels: Uint8Array,
+  width: number,
+  height: number,
+  quality: number
+): Promise<string> {
+  return new Promise((resolve, reject) => {
+    const worker = getSvgWorker();
+    const id = `${Date.now()}-${Math.random()}`;
+    const handler = (e: MessageEvent) => {
+      const data = e.data;
+      if (data.id !== id) return;
+      worker.removeEventListener('message', handler);
+      if (data.success) {
+        resolve(data.svg as string);
+      } else {
+        reject(new Error(data.error || 'SVG 转换失败'));
+      }
+    };
+    worker.addEventListener('message', handler);
+    // 使用 transferable 零拷贝传输像素数据
+    worker.postMessage(
+      { id, pixels, width, height, quality },
+      [pixels.buffer]
+    );
+  });
+}
+
 export function useImageConverter() {
   const convertImage = useCallback(
     async (task: ConversionTask, settings: ConversionSettings): Promise<ConversionResult> => {
@@ -17,13 +62,16 @@ export function useImageConverter() {
       canvas.height = targetHeight;
       ctx.drawImage(img, 0, 0, targetWidth, targetHeight);
 
-      // SVG: embed raster as base64 in SVG wrapper
+      // SVG: 使用 vtracer WASM 进行真正的矢量化描摹
       if (settings.outputFormat === 'svg') {
-        const dataUrl = canvas.toDataURL('image/png');
-        const svgContent = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${targetWidth}" height="${targetHeight}" viewBox="0 0 ${targetWidth} ${targetHeight}">
-  <image width="${targetWidth}" height="${targetHeight}" href="${dataUrl}"/>
-</svg>`;
-        const blob = new Blob([svgContent], { type: 'image/svg+xml' });
+        const imageData = ctx.getImageData(0, 0, targetWidth, targetHeight);
+        const svgString = await convertSvgInWorker(
+          new Uint8Array(imageData.data),
+          targetWidth,
+          targetHeight,
+          settings.quality
+        );
+        const blob = new Blob([svgString], { type: 'image/svg+xml' });
         const convertedSize = blob.size;
         const sizeReduction = task.originalSize > 0
           ? Math.round((1 - convertedSize / task.originalSize) * 100)
