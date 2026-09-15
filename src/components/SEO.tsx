@@ -98,7 +98,7 @@ export function organizationSchema() {
     '@type': 'Organization',
     name: 'PixConvert',
     url: BASE_URL,
-    logo: `${BASE_URL}/favicon.svg`,
+    logo: `${BASE_URL}/icon-512.png`,
     description: 'Free online image format converter supporting WebP, AVIF, JPG, PNG, and SVG. All processing done locally in your browser.',
     slogan: 'Image Conversion, Never Been Easier',
     email: 'mdvrinsider@gmail.com',
@@ -243,7 +243,7 @@ export function articleSchema(headline: string, description: string, path: strin
       name: 'PixConvert',
       logo: {
         '@type': 'ImageObject',
-        url: `${BASE_URL}/favicon.svg`,
+        url: `${BASE_URL}/icon-512.png`,
       },
     },
     datePublished: '2026-07-11',

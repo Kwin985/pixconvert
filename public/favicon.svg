@@ -1,4 +1,9 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="32" height="32" fill="#0A0B0D"/>
-<path d="M26.6677 23.7149H8.38057V20.6496H5.33301V8.38159H26.6677V23.7149ZM8.38057 20.6496H23.6201V11.4482H8.38057V20.6496ZM16.0011 16.0021L13.8461 18.1705L11.6913 16.0021L13.8461 13.8337L16.0011 16.0021ZM22.0963 16.0008L19.9414 18.1691L17.7865 16.0008L19.9414 13.8324L22.0963 16.0008Z" fill="#32F08C"/>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="112" fill="#1C222F"/>
+  <!-- 转换箭头（衬在 P 后方） -->
+  <path d="M 352.8 111.13 A 128 128 0 0 1 274 340" stroke="#F8751F" stroke-width="56" fill="none"/>
+  <path d="M 218 340 L 276 310 L 276 396 Z" fill="#F8751F"/>
+  <!-- P 字形 -->
+  <rect x="128" y="106" width="78" height="286" fill="#F7F6F1"/>
+  <circle cx="274" cy="212" r="70.5" stroke="#F7F6F1" stroke-width="55"/>
 </svg>
