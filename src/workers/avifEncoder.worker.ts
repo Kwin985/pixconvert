@@ -33,19 +33,25 @@ interface EncodeResponse {
   error?: string;
 }
 
-self.onmessage = async (e: MessageEvent<EncodeRequest>) => {
+// 串行队列：WASM 中 rav1e 为单线程编译，并发编码无加速收益且使多张
+// 大图的像素与编码缓冲同时驻留，导致内存暴涨。所有请求按序执行
+let encodeQueue: Promise<void> = Promise.resolve();
+
+self.onmessage = (e: MessageEvent<EncodeRequest>) => {
   const { id, pixels, width, height, quality } = e.data;
-  try {
-    await ensureInit();
-    const avifBytes = encode_avif(pixels, width, height, quality);
-    const response: EncodeResponse = { id, success: true, data: avifBytes };
-    self.postMessage(response);
-  } catch (error) {
-    const response: EncodeResponse = {
-      id,
-      success: false,
-      error: error instanceof Error ? error.message : String(error),
-    };
-    self.postMessage(response);
-  }
+  encodeQueue = encodeQueue
+    .then(async () => {
+      await ensureInit();
+      const avifBytes = encode_avif(pixels, width, height, quality);
+      const response: EncodeResponse = { id, success: true, data: avifBytes };
+      self.postMessage(response);
+    })
+    .catch((error: unknown) => {
+      const response: EncodeResponse = {
+        id,
+        success: false,
+        error: error instanceof Error ? error.message : String(error),
+      };
+      self.postMessage(response);
+    });
 };

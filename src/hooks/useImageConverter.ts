@@ -134,18 +134,19 @@ export function useImageConverter() {
       onProgress: (id: string, result: ConversionResult) => void,
       onError: (id: string, error: string) => void
     ) => {
-      const promises = tasks
-        .filter((t) => t.status === 'pending' || t.status === 'converting')
-        .map(async (task) => {
-          try {
-            const result = await convertImage(task, settings);
-            onProgress(task.id, result);
-          } catch (err) {
-            onError(task.id, err instanceof Error ? err.message : '转换失败');
-          }
-        });
-
-      await Promise.allSettled(promises);
+      // 串行处理：WASM 端 rav1e 为单线程编码，并发执行无加速收益，
+      // 反而使多张大图同时驻留内存导致标签页崩溃（与桌面端 OOM 同源）
+      const pending = tasks.filter(
+        (t) => t.status === 'pending' || t.status === 'converting'
+      );
+      for (const task of pending) {
+        try {
+          const result = await convertImage(task, settings);
+          onProgress(task.id, result);
+        } catch (err) {
+          onError(task.id, err instanceof Error ? err.message : '转换失败');
+        }
+      }
     },
     [convertImage]
   );
