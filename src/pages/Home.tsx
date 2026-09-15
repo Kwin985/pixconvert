@@ -82,8 +82,8 @@ export default function HomePage() {
   return (
     <div className="min-h-screen flex flex-col">
       <SEO
-        title="PixConvert - Free Online Image Format Converter | WebP / AVIF / JPG / PNG"
-        description="Free online image format converter. Convert images to WebP, AVIF, JPG, PNG, SVG. Batch processing, 100% browser-side, no uploads. Protect your privacy."
+        title="PixConvert: Free Image Converter - WebP/AVIF/JPG/PNG"
+        description="Convert WebP, AVIF, JPG, PNG & SVG free in your browser. No uploads, no watermark, batch conversion - your files never leave your device."
         path="/"
         structuredData={[
           organizationSchema(),

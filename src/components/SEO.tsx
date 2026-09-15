@@ -103,6 +103,11 @@ export function organizationSchema() {
     slogan: 'Image Conversion, Never Been Easier',
     email: 'mdvrinsider@gmail.com',
     knowsAbout: ['WebP', 'AVIF', 'JPG', 'PNG', 'SVG', 'Image Compression', 'Image Format Conversion', 'Browser-side Image Processing'],
+    sameAs: [
+      'https://github.com/Kwin985/pixconvert',
+      'https://afdian.com/a/pixconvert',
+      'https://ko-fi.com/pixconvert',
+    ],
   };
 }
 
