@@ -1,9 +1,9 @@
 {
   "nav": {
-    "webpAvif": "WebP/AVIF",
+    "toWebp": "转 WebP",
+    "toAvif": "转 AVIF",
     "toJpg": "转 JPG",
     "toPng": "转 PNG",
-    "toHeic": "转 HEIC",
     "toSvg": "转 SVG",
     "compare": "格式对比",
     "faq": "常见问题",
@@ -28,7 +28,7 @@
     "description": "下载 Windows 桌面版，享受更流畅的性能、系统级集成和离线使用体验。同样的隐私优先 — 所有处理都在本地完成。",
     "downloadBtn": "下载 Windows 版",
     "version": "v0.1.0",
-    "size": "4 MB",
+    "size": "5.5 MB",
     "platform": "Windows x64",
     "features": [
       {
@@ -80,7 +80,7 @@
   "converter": {
     "upload": {
       "title": "拖拽图片到此处，或点击上传",
-      "hint": "支持 JPG、PNG、GIF、SVG、ICO、BMP、HEIC、TIFF、AVIF、WebP",
+      "hint": "支持 JPG、PNG、GIF、SVG、ICO、BMP、AVIF、WebP",
       "addMore": "点击添加更多文件"
     },
     "fileList": {
@@ -110,7 +110,6 @@
         "avif": "更新格式，压缩率更高",
         "jpg": "经典格式，广泛兼容",
         "png": "无损格式，支持透明",
-        "heic": "Apple 高效格式 (需 Safari)",
         "svg": "矢量格式，可嵌入 HTML"
       }
     },
@@ -172,7 +171,7 @@
       },
       {
         "q": "支持哪些图片格式输入？",
-        "a": "支持 JPG、JPEG、PNG、GIF、SVG、ICO、BMP、HEIC、HEIF、TIFF、AVIF、WebP 等主流格式。"
+        "a": "支持 JPG、JPEG、PNG、GIF、SVG、ICO、BMP、AVIF、WebP 等主流格式。"
       },
       {
         "q": "可以批量转换吗？有数量限制吗？",

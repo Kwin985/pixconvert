@@ -96,9 +96,10 @@ export default function FormatPage({ format, pageDescription }: FormatPageProps)
   const ext = FORMAT_EXT[format].toUpperCase();
 
   const seoDescriptions: Record<string, string> = {
+    webp: `Convert any image to WebP format online for free. 25-34% smaller than JPG/PNG with better quality. 100% browser-side, no uploads. Batch processing.`,
+    avif: `Convert any image to AVIF format online for free. The most efficient modern format, 45-50% smaller than JPG. 100% browser-side, no uploads. Powered by rav1e.`,
     jpg: `Convert any image to JPG format online for free. 100% browser-side, no uploads. Batch processing, adjustable quality, resize support. Fast and secure.`,
     png: `Convert any image to PNG format online for free. Lossless compression, transparency support. 100% browser-side, no uploads. Batch processing, instant download.`,
-    heic: `Convert any image to HEIC format online for free. Apple's high-efficiency format. 100% browser-side, no uploads. Batch processing, best for iPhone users.`,
     svg: `Convert any image to SVG format online for free. Vector format embeddable in HTML. 100% browser-side, no uploads. Batch processing, ideal for web designers.`,
   };
 

@@ -1,4 +1,4 @@
-﻿﻿import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Github, Heart, Mail, Download } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useConverterStore } from '@/store/useConverterStore';
@@ -7,7 +7,7 @@ import ShareButtons from '@/components/ShareButtons';
 const EMAIL_USER = 'mdvrinsider';
 const EMAIL_DOMAIN = 'gmail.com';
 const EMAIL_FULL = `${EMAIL_USER}@${EMAIL_DOMAIN}`;
-const EMAIL_MAILTO = `mailto:$\{EMAIL_FULL\}`;
+const EMAIL_MAILTO = `mailto:${EMAIL_FULL}`;
 const DESKTOP_DOWNLOAD_URL = '/downloads/PixConvert_0.1.0_x64-setup.exe';
 
 export default function Footer() {
@@ -43,7 +43,7 @@ export default function Footer() {
               <span className="sm:hidden">{t('footer.contact')}</span>
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/Kwin985/pixconvert"
               target="_blank"
               rel="noopener noreferrer"
               className={`flex items-center gap-1 text-sm hover:text-neon transition-colors ${isDark ? 'text-gray-400' : 'text-gray-500'}`}

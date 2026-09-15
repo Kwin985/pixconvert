@@ -12,7 +12,7 @@
     <image:image>
       <image:loc>https://pixconvert.cn/og-image.png</image:loc>
       <image:title>PixConvert - Free Online Image Format Converter</image:title>
-      <image:caption>Convert images to WebP, AVIF, JPG, PNG, HEIC, SVG. 100% browser-side, no uploads.</image:caption>
+      <image:caption>Convert images to WebP, AVIF, JPG, PNG, SVG. 100% browser-side, no uploads.</image:caption>
     </image:image>
     <xhtml:link rel="alternate" hreflang="en" href="https://pixconvert.cn/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://pixconvert.cn/" />
@@ -75,28 +75,52 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pixconvert.cn/to-png" />
   </url>
 
-  <!-- To HEIC -->
+  <!-- To WebP -->
   <url>
-    <loc>https://pixconvert.cn/to-heic</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://pixconvert.cn/to-webp</loc>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://pixconvert.cn/og-image.png</image:loc>
-      <image:title>Convert Images to HEIC Online Free - PixConvert</image:title>
-      <image:caption>Convert images to HEIC format. Apple's efficient format, 50% smaller than JPG.</image:caption>
+      <image:title>Convert Images to WebP Online Free - PixConvert</image:title>
+      <image:caption>Convert any image format to WebP online. 25-34% smaller than JPG/PNG. 100% browser-side, no uploads.</image:caption>
     </image:image>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pixconvert.cn/to-heic" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://pixconvert.cn/to-heic" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pixconvert.cn/to-heic" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://pixconvert.cn/to-heic" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://pixconvert.cn/to-heic" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://pixconvert.cn/to-heic" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://pixconvert.cn/to-heic" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pixconvert.cn/to-heic" />
-    <xhtml:link rel="alternate" hreflang="vi" href="https://pixconvert.cn/to-heic" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://pixconvert.cn/to-heic" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pixconvert.cn/to-heic" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pixconvert.cn/to-webp" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://pixconvert.cn/to-webp" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pixconvert.cn/to-webp" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pixconvert.cn/to-webp" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://pixconvert.cn/to-webp" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pixconvert.cn/to-webp" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pixconvert.cn/to-webp" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pixconvert.cn/to-webp" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://pixconvert.cn/to-webp" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pixconvert.cn/to-webp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pixconvert.cn/to-webp" />
+  </url>
+
+  <!-- To AVIF -->
+  <url>
+    <loc>https://pixconvert.cn/to-avif</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://pixconvert.cn/og-image.png</image:loc>
+      <image:title>Convert Images to AVIF Online Free - PixConvert</image:title>
+      <image:caption>Convert any image format to AVIF online. The most efficient modern format, 45-50% smaller than JPG. No uploads.</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pixconvert.cn/to-avif" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://pixconvert.cn/to-avif" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pixconvert.cn/to-avif" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pixconvert.cn/to-avif" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://pixconvert.cn/to-avif" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://pixconvert.cn/to-avif" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pixconvert.cn/to-avif" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pixconvert.cn/to-avif" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://pixconvert.cn/to-avif" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pixconvert.cn/to-avif" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pixconvert.cn/to-avif" />
   </url>
 
   <!-- To SVG -->

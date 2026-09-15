@@ -23,7 +23,6 @@ export default function SettingsPanel({ lockedFormat }: SettingsPanelProps) {
     { value: 'avif', label: 'AVIF', desc: t('converter.settings.formatDesc.avif') },
     { value: 'jpg', label: 'JPG', desc: t('converter.settings.formatDesc.jpg') },
     { value: 'png', label: 'PNG', desc: t('converter.settings.formatDesc.png') },
-    { value: 'heic', label: 'HEIC', desc: t('converter.settings.formatDesc.heic') },
     { value: 'svg', label: 'SVG', desc: t('converter.settings.formatDesc.svg') },
   ];
 

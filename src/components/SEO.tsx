@@ -99,10 +99,10 @@ export function organizationSchema() {
     name: 'PixConvert',
     url: BASE_URL,
     logo: `${BASE_URL}/favicon.svg`,
-    description: 'Free online image format converter supporting WebP, AVIF, JPG, PNG, HEIC, and SVG. All processing done locally in your browser.',
+    description: 'Free online image format converter supporting WebP, AVIF, JPG, PNG, and SVG. All processing done locally in your browser.',
     slogan: 'Image Conversion, Never Been Easier',
     email: 'mdvrinsider@gmail.com',
-    knowsAbout: ['WebP', 'AVIF', 'JPG', 'PNG', 'HEIC', 'SVG', 'Image Compression', 'Image Format Conversion', 'Browser-side Image Processing'],
+    knowsAbout: ['WebP', 'AVIF', 'JPG', 'PNG', 'SVG', 'Image Compression', 'Image Format Conversion', 'Browser-side Image Processing'],
   };
 }
 
@@ -118,7 +118,7 @@ export function webApplicationSchema() {
     browserRequirements: 'Requires JavaScript. Requires HTML5 Canvas support.',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
     featureList: [
-      'Convert images to WebP, AVIF, JPG, PNG, HEIC, SVG',
+      'Convert images to WebP, AVIF, JPG, PNG, SVG',
       'Batch image processing with ZIP download',
       '100% browser-side local processing, no uploads',
       'Slider comparison preview of original vs converted',
@@ -200,7 +200,7 @@ export function howToSchema(formatTo: string) {
         '@type': 'HowToStep',
         position: 1,
         name: 'Upload images',
-        text: `Drag and drop or click to upload your images to PixConvert. Supports JPG, PNG, GIF, SVG, ICO, BMP, HEIC, TIFF, AVIF, and WebP formats. No registration required.`,
+        text: `Drag and drop or click to upload your images to PixConvert. Supports JPG, PNG, GIF, SVG, ICO, BMP, AVIF, and WebP formats. No registration required.`,
       },
       {
         '@type': 'HowToStep',
@@ -222,7 +222,7 @@ export function howToSchema(formatTo: string) {
       },
     ],
     totalTime: 'PT1M',
-    supply: { '@type': 'HowToSupply', name: 'Images to convert (JPG, PNG, GIF, SVG, ICO, BMP, HEIC, TIFF, AVIF, WebP)' },
+    supply: { '@type': 'HowToSupply', name: 'Images to convert (JPG, PNG, GIF, SVG, ICO, BMP, AVIF, WebP)' },
   };
 }
 

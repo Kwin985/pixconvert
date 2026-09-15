@@ -1,6 +1,7 @@
 import { useCallback } from 'react';
 import type { ConversionTask, ConversionSettings, ConversionResult } from '@/types';
-import { FORMAT_MIME, FORMAT_LABEL } from '@/types';
+import { FORMAT_MIME } from '@/types';
+import { encodeAvifInWorker } from '@/lib/avifEncoder';
 
 // SVG 矢量化转换 Worker（单例，懒加载）
 let svgWorker: Worker | null = null;
@@ -79,6 +80,24 @@ export function useImageConverter() {
         return { blob, convertedSize, sizeReduction, format: 'svg' };
       }
 
+      // AVIF: canvas.toBlob 不支持 image/avif（会静默回退为 PNG 数据），
+      // 必须使用 pixconvert-core WASM（rav1e）进行真正的 AVIF 编码
+      if (settings.outputFormat === 'avif') {
+        const imageData = ctx.getImageData(0, 0, targetWidth, targetHeight);
+        const avifBytes = await encodeAvifInWorker(
+          new Uint8Array(imageData.data),
+          targetWidth,
+          targetHeight,
+          settings.quality
+        );
+        const blob = new Blob([avifBytes], { type: 'image/avif' });
+        const convertedSize = blob.size;
+        const sizeReduction = task.originalSize > 0
+          ? Math.round((1 - convertedSize / task.originalSize) * 100)
+          : 0;
+        return { blob, convertedSize, sizeReduction, format: 'avif' };
+      }
+
       const mimeType = FORMAT_MIME[settings.outputFormat];
       const quality = settings.quality / 100;
 
@@ -86,14 +105,7 @@ export function useImageConverter() {
         canvas.toBlob(
           (b) => {
             if (b) resolve(b);
-            else {
-              // HEIC encoding is not supported by most browsers
-              if (settings.outputFormat === 'heic') {
-                reject(new Error(`${FORMAT_LABEL.heic} 编码不被当前浏览器支持，请使用 Safari 浏览器或选择其他格式`));
-              } else {
-                reject(new Error('转换失败'));
-              }
-            }
+            else reject(new Error('转换失败'));
           },
           mimeType,
           quality

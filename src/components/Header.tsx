@@ -13,10 +13,10 @@ export default function Header() {
   const { t } = useTranslation();
 
   const allNavItems = [
-    { path: '/', label: t('nav.webpAvif'), icon: Image },
+    { path: '/to-webp', label: t('nav.toWebp'), icon: Image },
+    { path: '/to-avif', label: t('nav.toAvif'), icon: FileImage },
     { path: '/to-jpg', label: t('nav.toJpg'), icon: FileImage },
     { path: '/to-png', label: t('nav.toPng'), icon: FileImage },
-    { path: '/to-heic', label: t('nav.toHeic'), icon: FileImage },
     { path: '/to-svg', label: t('nav.toSvg'), icon: FileImage },
     { path: '/compare', label: t('nav.compare'), icon: GitCompare },
     { path: '/faq', label: t('nav.faq'), icon: HelpCircle },

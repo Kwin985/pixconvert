@@ -1,9 +1,9 @@
 import FormatPage from '@/pages/FormatPage';
 
-export default function ToHEIC() {
+export default function ToAVIF() {
   return (
     <FormatPage
-      format="heic"
+      format="avif"
       pageDescription=""
     />
   );

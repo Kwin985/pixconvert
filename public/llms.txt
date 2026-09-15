@@ -1,18 +1,17 @@
 # PixConvert
 
-> Free online image format converter. Convert images to WebP, AVIF, JPG, PNG, HEIC, and SVG. 100% browser-side processing, no uploads, complete privacy.
+> Free online image format converter. Convert images to WebP, AVIF, JPG, PNG, and SVG. 100% browser-side processing, no uploads, complete privacy.
 
 ## What is PixConvert?
 
-PixConvert is a free, browser-based image format converter that supports WebP, AVIF, JPG, PNG, HEIC, and SVG output formats. All image processing happens locally in the user's browser using the Canvas API — no images are ever uploaded to a server, ensuring complete privacy and zero data retention.
+PixConvert is a free, browser-based image format converter that supports WebP, AVIF, JPG, PNG, and SVG output formats. All image processing happens locally in the user's browser using the Canvas API and WebAssembly — no images are ever uploaded to a server, ensuring complete privacy and zero data retention.
 
 ## Supported Conversions
 
 - **Convert to WebP**: Reduces file size by 25-34% compared to JPG/PNG while maintaining visual quality. Supported by 97%+ of browsers.
-- **Convert to AVIF**: Achieves 45-50% smaller file sizes than JPG. The most efficient modern image format.
+- **Convert to AVIF**: Achieves 45-50% smaller file sizes than JPG. The most efficient modern image format, powered by rav1e (AV1 encoder).
 - **Convert to JPG**: Universal compatibility format. Ideal for email, print, and legacy systems.
 - **Convert to PNG**: Lossless format with transparency support. Best for graphics and screenshots.
-- **Convert to HEIC**: Apple's efficient format. Achieves 50% smaller files than JPG at equivalent quality.
 - **Convert to SVG**: Vector format with infinite scalability. Best for logos and simple graphics.
 
 ## Key Features
@@ -28,7 +27,7 @@ PixConvert is a free, browser-based image format converter that supports WebP, A
 ## Technical Details
 
 - **Technology Stack**: React 18, TypeScript, Vite, Tailwind CSS, Framer Motion
-- **Processing**: Canvas API for raster format conversion, SVG wrapping for vector output
+- **Processing**: Canvas API for raster format decoding, WebAssembly (rav1e) for AVIF encoding, vtracer WASM for true SVG vectorization
 - **Privacy**: Zero server-side processing. Images never leave the user's device.
 - **Performance**: Code-split routes, lazy-loaded components, optimized bundle size
 
@@ -40,7 +39,6 @@ PixConvert is a free, browser-based image format converter that supports WebP, A
 | AVIF | 45-50% smaller than JPG | Yes | Yes | 93-95% | Modern web, maximum efficiency |
 | JPG | Baseline | No | No | 100% | Universal compatibility |
 | PNG | 2-5x larger than JPG | Yes | No | 100% | Graphics, screenshots |
-| HEIC | 50% smaller than JPG | Yes | Yes | Apple devices | Apple ecosystem |
 | SVG | Vector (infinite scalability) | Yes | Yes | 100% | Logos, icons, simple graphics |
 
 ## Frequently Asked Questions
@@ -52,8 +50,8 @@ Yes, PixConvert is 100% free with no hidden costs, no registration, and no water
 Yes. All image processing happens locally in your browser using the Canvas API. Your images are never uploaded to any server, ensuring complete privacy.
 
 ### What image formats are supported?
-Input formats: JPG, PNG, GIF, SVG, ICO, BMP, HEIC, TIFF, AVIF, WebP
-Output formats: WebP, AVIF, JPG, PNG, HEIC, SVG
+Input formats: JPG, PNG, GIF, SVG, ICO, BMP, AVIF, WebP
+Output formats: WebP, AVIF, JPG, PNG, SVG
 
 ### How much space does WebP save compared to JPG?
 According to Google's research, WebP lossless images are 26-34% smaller than equivalent PNGs. Lossy WebP images can be 30-50% smaller than JPG at equivalent visual quality.
@@ -72,10 +70,10 @@ Yes, PixConvert supports batch processing. You can upload multiple images and co
 ## Links
 
 - [Home](https://pixconvert.cn/)
-- [Convert to WebP/AVIF](https://pixconvert.cn/)
+- [Convert to WebP](https://pixconvert.cn/to-webp)
+- [Convert to AVIF](https://pixconvert.cn/to-avif)
 - [Convert to JPG](https://pixconvert.cn/to-jpg)
 - [Convert to PNG](https://pixconvert.cn/to-png)
-- [Convert to HEIC](https://pixconvert.cn/to-heic)
 - [Convert to SVG](https://pixconvert.cn/to-svg)
 - [Format Comparison](https://pixconvert.cn/compare)
 - [FAQ](https://pixconvert.cn/faq)
@@ -92,7 +90,7 @@ User slides the quality control to "75". PixConvert applies a balanced compressi
 User clicks "Compare". PixConvert renders a side-by-side slider showing the original JPG and the converted AVIF, highlighting the 45% file size reduction.
 
 **Example 4: One-Click Clear**
-After converting 20 images, user clicks "Clear All" to remove all files from the workspace, then drags in a new batch of HEIC photos from their iPhone.
+After converting 20 images, user clicks "Clear All" to remove all files from the workspace, then drags in a new batch of photos from their iPhone.
 
 **Example 5: Theme Switching**
 User toggles between dark and light theme based on their system preference. The interface adapts immediately with smooth transitions.
@@ -109,7 +107,7 @@ Needs to convert images for web optimization. Values: file size reduction, batch
 Needs to resize and format images for social media. Values: ease of use, quality control, privacy.
 
 **Persona 3: Photographer**
-Needs to convert RAW/HEIC photos to web-friendly formats. Values: HEIC support, high quality output, no uploads.
+Needs to convert high-resolution photos to web-friendly formats. Values: high quality output, no uploads.
 
 **Persona 4: Business Owner**
 Needs to optimize website images. Values: free, no registration, batch processing, privacy compliance.

@@ -6,6 +6,10 @@ import { useConverterStore } from '@/store/useConverterStore';
 import SEO, { breadcrumbSchema, articleSchema } from '@/components/SEO';
 import { formatFileSize } from '@/types';
 import { trackCompareImage } from '@/lib/gtag';
+import { encodeAvifInWorker } from '@/lib/avifEncoder';
+
+// 限制对比编码尺寸，避免大图在 WASM 中编码过久
+const MAX_COMPARE_DIM = 1280;
 
 export default function ComparePage() {
   const isDark = useConverterStore((s) => s.isDark);
@@ -21,23 +25,31 @@ export default function ComparePage() {
     setOriginal({ url, size: file.size });
 
     const img = await loadImage(url);
+    const scale = Math.min(1, MAX_COMPARE_DIM / Math.max(img.width, img.height));
+    const w = Math.round(img.width * scale);
+    const h = Math.round(img.height * scale);
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    canvas.width = img.width;
-    canvas.height = img.height;
-    ctx.drawImage(img, 0, 0);
+    canvas.width = w;
+    canvas.height = h;
+    ctx.drawImage(img, 0, 0, w, h);
 
     const webpBlob = await new Promise<Blob>((resolve) => {
       canvas.toBlob((b) => resolve(b!), 'image/webp', 0.8);
     });
     setWebp({ url: URL.createObjectURL(webpBlob), size: webpBlob.size });
 
-    const avifBlob = await new Promise<Blob>((resolve) => {
-      canvas.toBlob((b) => resolve(b!), 'image/avif', 0.8);
-    });
-    setAvif({ url: URL.createObjectURL(avifBlob), size: avifBlob.size });
+    // canvas.toBlob 不支持 image/avif，使用 pixconvert-core WASM（rav1e）真编码
+    try {
+      const imageData = ctx.getImageData(0, 0, w, h);
+      const avifBytes = await encodeAvifInWorker(new Uint8Array(imageData.data), w, h, 80);
+      const avifBlob = new Blob([avifBytes], { type: 'image/avif' });
+      setAvif({ url: URL.createObjectURL(avifBlob), size: avifBlob.size });
+    } catch {
+      setAvif(null);
+    }
 
     trackCompareImage('webp_avif');
   }, []);

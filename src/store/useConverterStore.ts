@@ -2,6 +2,19 @@ import { create } from 'zustand';
 import type { ConversionTask, ConversionSettings, OutputFormat, Preset, ConversionMode } from '@/types';
 import { DEFAULT_SETTINGS, PRESET_CONFIGS } from '@/types';
 
+/**
+ * 设置变更后，将已转换/失败的任务重置为待转换，
+ * 使新设置（质量/尺寸/格式等）能通过自动转换立即生效
+ */
+function resetStaleTasks(tasks: ConversionTask[]): ConversionTask[] {
+  if (!tasks.some((t) => t.status === 'done' || t.status === 'error')) return tasks;
+  return tasks.map((t) =>
+    t.status === 'done' || t.status === 'error'
+      ? { ...t, status: 'pending' as const, error: undefined }
+      : t
+  );
+}
+
 interface ConverterState {
   tasks: ConversionTask[];
   settings: ConversionSettings;
@@ -71,36 +84,42 @@ export const useConverterStore = create<ConverterState>((set) => ({
   setSettings: (partial) =>
     set((state) => ({
       settings: { ...state.settings, ...partial, preset: 'custom' as const },
+      tasks: resetStaleTasks(state.tasks),
     })),
 
   setOutputFormat: (format) =>
     set((state) => ({
       settings: { ...state.settings, outputFormat: format, preset: 'custom' as const },
+      tasks: resetStaleTasks(state.tasks),
     })),
 
   setQuality: (quality) =>
     set((state) => ({
       settings: { ...state.settings, quality, preset: 'custom' as const },
+      tasks: resetStaleTasks(state.tasks),
     })),
 
   setScale: (scale) =>
     set((state) => ({
       settings: { ...state.settings, scale, preset: 'custom' as const },
+      tasks: resetStaleTasks(state.tasks),
     })),
 
   setMode: (mode) =>
     set((state) => ({
       settings: { ...state.settings, mode, preset: 'custom' as const },
+      tasks: resetStaleTasks(state.tasks),
     })),
 
   setPreserveMetadata: (preserve) =>
     set((state) => ({
       settings: { ...state.settings, preserveMetadata: preserve, preset: 'custom' as const },
+      tasks: resetStaleTasks(state.tasks),
     })),
 
   setPreset: (preset) =>
     set((state) => {
-      if (preset === 'custom') return state;
+      if (preset === 'custom') return { tasks: resetStaleTasks(state.tasks) };
       const config = PRESET_CONFIGS[preset];
       return {
         settings: {
@@ -109,6 +128,7 @@ export const useConverterStore = create<ConverterState>((set) => ({
           mode: config.mode,
           preset,
         },
+        tasks: resetStaleTasks(state.tasks),
       };
     }),
 

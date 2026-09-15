@@ -1,4 +1,4 @@
-export type OutputFormat = 'webp' | 'avif' | 'jpg' | 'jpeg' | 'png' | 'heic' | 'svg';
+export type OutputFormat = 'webp' | 'avif' | 'jpg' | 'jpeg' | 'png' | 'svg';
 
 export const FORMAT_MIME: Record<OutputFormat, string> = {
   webp: 'image/webp',
@@ -6,7 +6,6 @@ export const FORMAT_MIME: Record<OutputFormat, string> = {
   jpg: 'image/jpeg',
   jpeg: 'image/jpeg',
   png: 'image/png',
-  heic: 'image/heic',
   svg: 'image/svg+xml',
 };
 
@@ -16,7 +15,6 @@ export const FORMAT_EXT: Record<OutputFormat, string> = {
   jpg: '.jpg',
   jpeg: '.jpeg',
   png: '.png',
-  heic: '.heic',
   svg: '.svg',
 };
 
@@ -26,7 +24,6 @@ export const FORMAT_LABEL: Record<OutputFormat, string> = {
   jpg: 'JPG',
   jpeg: 'JPEG',
   png: 'PNG',
-  heic: 'HEIC',
   svg: 'SVG',
 };
 export type ConversionMode = 'lossy' | 'lossless';
@@ -87,6 +84,8 @@ export const PRESET_CONFIGS: Record<Exclude<Preset, 'custom'>, { quality: number
   maxQuality: { quality: 95, mode: 'lossless' },
 };
 
+// 仅声明浏览器 <img>/Canvas 可真实解码的输入格式；
+// TIFF/HEIC 无法在浏览器中解码，不得声明支持（不能有而不能用）
 export const SUPPORTED_INPUT_TYPES = [
   'image/jpeg',
   'image/png',
@@ -95,16 +94,12 @@ export const SUPPORTED_INPUT_TYPES = [
   'image/x-icon',
   'image/vnd.microsoft.icon',
   'image/bmp',
-  'image/heic',
-  'image/heif',
-  'image/tiff',
   'image/avif',
   'image/webp',
 ];
 
 export const SUPPORTED_EXTENSIONS = [
-  '.jpg', '.jpeg', '.png', '.gif', '.svg', '.ico', '.bmp',
-  '.heic', '.heif', '.tiff', '.tif', '.avif', '.webp',
+  '.jpg', '.jpeg', '.png', '.gif', '.svg', '.ico', '.bmp', '.avif', '.webp',
 ];
 
 export function formatFileSize(bytes: number): string {

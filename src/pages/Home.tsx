@@ -1,4 +1,4 @@
-﻿﻿import { useEffect, useCallback } from 'react';
+import { useEffect, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useConverterStore } from '@/store/useConverterStore';
@@ -83,7 +83,7 @@ export default function HomePage() {
     <div className="min-h-screen flex flex-col">
       <SEO
         title="PixConvert - Free Online Image Format Converter | WebP / AVIF / JPG / PNG"
-        description="Free online image format converter. Convert images to WebP, AVIF, JPG, PNG, HEIC. Batch processing, 100% browser-side, no uploads. Protect your privacy."
+        description="Free online image format converter. Convert images to WebP, AVIF, JPG, PNG, SVG. Batch processing, 100% browser-side, no uploads. Protect your privacy."
         path="/"
         structuredData={[
           organizationSchema(),

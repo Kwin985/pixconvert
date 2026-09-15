@@ -1,4 +1,4 @@
-﻿﻿import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Download, Zap, WifiOff, Layers } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useConverterStore } from '@/store/useConverterStore';
@@ -22,7 +22,7 @@ export default function DesktopDownloadSection() {
   const description = t('desktop.description', { defaultValue: 'Download the Windows desktop version for better performance, system integration, and offline usage. Same privacy-first approach — all processing stays on your machine.' });
   const downloadBtn = t('desktop.downloadBtn', { defaultValue: 'Download for Windows' });
   const version = t('desktop.version', { defaultValue: 'v0.1.0' });
-  const size = t('desktop.size', { defaultValue: '4 MB' });
+  const size = t('desktop.size', { defaultValue: '5.5 MB' });
   const platform = t('desktop.platform', { defaultValue: 'Windows x64' });
 
   const iconMap: Record<string, typeof Zap> = {
