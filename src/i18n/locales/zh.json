@@ -76,7 +76,9 @@
         "desc": "支持同时处理数百张图片，提供实时预览和滑块对比，直观看到转换效果。"
       }
     ],
-    "popularTitle": "热门转换"
+    "popularTitle": "热门转换",
+    "hubLink": "任意图片转换为 {{format}}",
+    "pairLink": "{{from}} 转 {{to}}"
   },
   "converter": {
     "upload": {

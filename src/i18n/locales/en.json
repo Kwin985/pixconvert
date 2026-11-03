@@ -76,7 +76,9 @@
         "desc": "Process hundreds of images simultaneously with real-time preview and slider comparison to visually see the conversion results."
       }
     ],
-    "popularTitle": "Popular Conversions"
+    "popularTitle": "Popular Conversions",
+    "hubLink": "Convert anything to {{format}}",
+    "pairLink": "{{from}} to {{to}}"
   },
   "converter": {
     "upload": {

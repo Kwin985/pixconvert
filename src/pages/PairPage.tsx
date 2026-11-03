@@ -2,6 +2,7 @@ import { useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { CheckCircle2, ArrowRight, HelpCircle } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { useConverterStore } from '@/store/useConverterStore';
 import { useImageConverter } from '@/hooks/useImageConverter';
 import { useHistory } from '@/hooks/useHistory';
@@ -14,7 +15,7 @@ import FileList from '@/components/FileList';
 import SettingsPanel from '@/components/SettingsPanel';
 import PreviewComparison from '@/components/PreviewComparison';
 import BatchActions from '@/components/BatchActions';
-import { getPairBySlug, CONVERSION_PAIRS } from '@/data/conversionPairs';
+import { getPairBySlug, getPairContent, CONVERSION_PAIRS } from '@/data/conversionPairs';
 
 const HUB_PATH: Record<string, string> = {
   webp: '/to-webp',
@@ -33,6 +34,8 @@ export default function PairPage({ slug }: PairPageProps) {
   const pair = getPairBySlug(slug);
   const { tasks, settings, updateTaskResult, setTaskError, setOutputFormat, clearTasks } = useConverterStore();
   const isDark = useConverterStore((s) => s.isDark);
+  const { t, i18n } = useTranslation();
+  const c = pair ? getPairContent(pair, i18n.language) : undefined;
   const { convertAll } = useImageConverter();
   const { addEntry } = useHistory();
 
@@ -123,7 +126,7 @@ export default function PairPage({ slug }: PairPageProps) {
     description: `Step-by-step guide to convert ${pair.from} images to ${pair.to} online for free using PixConvert. No uploads, 100% browser-side processing.`,
     totalTime: 'PT1M',
     tool: { '@type': 'HowToTool', name: 'PixConvert' },
-    step: pair.steps.map((s, idx) => ({
+    step: c.steps.map((s, idx) => ({
       '@type': 'HowToStep',
       position: idx + 1,
       name: s.name,
@@ -134,8 +137,8 @@ export default function PairPage({ slug }: PairPageProps) {
   return (
     <div className="min-h-screen flex flex-col">
       <SEO
-        title={pair.title}
-        description={pair.description}
+        title={c.title}
+        description={c.description}
         path={`/${pair.slug}`}
         structuredData={[
           howToData,
@@ -143,7 +146,7 @@ export default function PairPage({ slug }: PairPageProps) {
             `PixConvert ${pair.from} to ${pair.to} Converter`,
             `Free online ${pair.from} to ${pair.to} converter. 100% browser-side processing, no uploads, batch conversion.`
           ),
-          faqPageSchema(pair.faq),
+          faqPageSchema(c.faq),
           breadcrumbSchema([
             { name: 'PixConvert', url: `${baseUrl}/` },
             { name: `${pair.from} to ${pair.to}`, url: pageUrl },
@@ -155,10 +158,10 @@ export default function PairPage({ slug }: PairPageProps) {
       <section className="pt-12 pb-6 container max-w-4xl mx-auto px-4 text-center">
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
           <span className="inline-block px-3 py-1 rounded-full text-xs font-medium bg-neon/10 text-neon mb-4">
-            {pair.from} → {pair.to} · Free · No Uploads
+            {pair.from} → {pair.to} · {c.badge}
           </span>
-          <h1 className={`text-3xl md:text-4xl font-bold mb-4 ${headingColor}`}>{pair.h1}</h1>
-          <p className={`text-base md:text-lg ${bodyColor}`}>{pair.intro[0]}</p>
+          <h1 className={`text-3xl md:text-4xl font-bold mb-4 ${headingColor}`}>{c.h1}</h1>
+          <p className={`text-base md:text-lg ${bodyColor}`}>{c.intro[0]}</p>
         </motion.div>
       </section>
 
@@ -190,11 +193,11 @@ export default function PairPage({ slug }: PairPageProps) {
       {/* SEO content */}
       <section className={`py-12 border-t ${contentBg}`}>
         <div className="container max-w-3xl mx-auto px-4">
-          <p className={`text-base leading-relaxed mb-10 ${bodyColor}`}>{pair.intro[1]}</p>
+          <p className={`text-base leading-relaxed mb-10 ${bodyColor}`}>{c.intro[1]}</p>
 
-          <h2 className={`text-2xl font-bold mb-6 ${headingColor}`}>Why convert {pair.from} to {pair.to}?</h2>
+          <h2 className={`text-2xl font-bold mb-6 ${headingColor}`}>{c.benefitsTitle}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-12">
-            {pair.benefits.map((b) => (
+            {c.benefits.map((b) => (
               <div key={b.title} className={`rounded-xl p-5 border ${cardBg}`}>
                 <div className="flex items-start gap-2 mb-2">
                   <CheckCircle2 className="w-5 h-5 text-neon flex-shrink-0 mt-0.5" />
@@ -205,9 +208,9 @@ export default function PairPage({ slug }: PairPageProps) {
             ))}
           </div>
 
-          <h2 className={`text-2xl font-bold mb-6 ${headingColor}`}>How to convert {pair.from} to {pair.to}</h2>
+          <h2 className={`text-2xl font-bold mb-6 ${headingColor}`}>{c.stepsTitle}</h2>
           <ol className="space-y-4 mb-12">
-            {pair.steps.map((s, idx) => (
+            {c.steps.map((s, idx) => (
               <li key={s.name} className={`flex gap-4 rounded-xl p-4 border ${cardBg}`}>
                 <span className="flex-shrink-0 w-8 h-8 rounded-full bg-neon text-surface-0 font-bold flex items-center justify-center text-sm">
                   {idx + 1}
@@ -220,9 +223,9 @@ export default function PairPage({ slug }: PairPageProps) {
             ))}
           </ol>
 
-          <h2 className={`text-2xl font-bold mb-6 ${headingColor}`}>Frequently asked questions</h2>
+          <h2 className={`text-2xl font-bold mb-6 ${headingColor}`}>{c.faqTitle}</h2>
           <div className="space-y-3 mb-12">
-            {pair.faq.map((f) => (
+            {c.faq.map((f) => (
               <details key={f.q} className={`rounded-xl border ${cardBg} group`}>
                 <summary className={`flex items-center gap-2 px-5 py-4 cursor-pointer font-medium ${isDark ? 'text-gray-200' : 'text-gray-800'}`}>
                   <HelpCircle className="w-4 h-4 text-neon flex-shrink-0" />
@@ -233,13 +236,13 @@ export default function PairPage({ slug }: PairPageProps) {
             ))}
           </div>
 
-          <h2 className={`text-2xl font-bold mb-6 ${headingColor}`}>Related conversions</h2>
+          <h2 className={`text-2xl font-bold mb-6 ${headingColor}`}>{c.relatedTitle}</h2>
           <div className="flex flex-wrap gap-3 mb-8">
             <Link
               to={HUB_PATH[pair.outputFormat] || '/'}
               className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-full border text-sm font-medium transition-colors ${cardBg} hover:border-neon hover:text-neon`}
             >
-              Convert anything to {toLabel} <ArrowRight className="w-3.5 h-3.5" />
+              {t('home.hubLink', { format: toLabel })} <ArrowRight className="w-3.5 h-3.5" />
             </Link>
             {related.map((p) => (
               <Link
@@ -247,7 +250,7 @@ export default function PairPage({ slug }: PairPageProps) {
                 to={`/${p.slug}`}
                 className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-full border text-sm font-medium transition-colors ${cardBg} hover:border-neon hover:text-neon`}
               >
-                {p.from} to {p.to} <ArrowRight className="w-3.5 h-3.5" />
+                {t('home.pairLink', { from: p.from, to: p.to })} <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             ))}
           </div>

@@ -48,7 +48,7 @@ export default function PopularConversions() {
                 isDark ? 'border-surface-4 text-gray-400 hover:border-neon hover:text-neon' : 'border-light-border text-gray-500 hover:border-neon hover:text-neon'
               }`}
             >
-              Convert anything to {h.to}
+              {t('home.hubLink', { format: h.to })}
             </Link>
           ))}
         </div>
