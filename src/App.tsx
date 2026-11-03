@@ -9,6 +9,20 @@ import ToAVIF from "@/pages/ToAVIF";
 import ToJPG from "@/pages/ToJPG";
 import ToPNG from "@/pages/ToPNG";
 import ToSVG from "@/pages/ToSVG";
+import PairPage from "@/pages/PairPage";
+
+const PAIR_SLUGS = [
+  "jpg-to-webp",
+  "png-to-webp",
+  "webp-to-jpg",
+  "webp-to-png",
+  "jpg-to-avif",
+  "png-to-avif",
+  "avif-to-jpg",
+  "avif-to-png",
+  "jpg-to-png",
+  "png-to-jpg",
+];
 
 export default function App() {
   return (
@@ -24,6 +38,9 @@ export default function App() {
           <Route path="/to-jpg" element={<ToJPG />} />
           <Route path="/to-png" element={<ToPNG />} />
           <Route path="/to-svg" element={<ToSVG />} />
+          {PAIR_SLUGS.map((slug) => (
+            <Route key={slug} path={`/${slug}`} element={<PairPage slug={slug} />} />
+          ))}
         </Route>
       </Routes>
     </Router>

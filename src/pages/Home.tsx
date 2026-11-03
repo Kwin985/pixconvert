@@ -13,6 +13,7 @@ import SettingsPanel from '@/components/SettingsPanel';
 import PreviewComparison from '@/components/PreviewComparison';
 import BatchActions from '@/components/BatchActions';
 import DesktopDownloadSection from '@/components/DesktopDownloadSection';
+import PopularConversions from '@/components/PopularConversions';
 
 export default function HomePage() {
   const { tasks, settings, updateTaskResult, setTaskError } = useConverterStore();
@@ -147,6 +148,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <PopularConversions />
 
       <DesktopDownloadSection />
     </div>

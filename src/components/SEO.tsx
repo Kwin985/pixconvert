@@ -64,19 +64,6 @@ export default function SEO({ title, description, path = '/', structuredData, no
       <meta name="twitter:image" content={ogImage} />
       <meta name="twitter:image:alt" content={title} />
 
-      {/* Alternate hreflang (SEO critical for multi‑lang) */}
-      <link rel="alternate" hrefLang="en" href={`${BASE_URL}${path}`} />
-      <link rel="alternate" hrefLang="zh" href={`${BASE_URL}${path}`} />
-      <link rel="alternate" hrefLang="ja" href={`${BASE_URL}${path}`} />
-      <link rel="alternate" hrefLang="fr" href={`${BASE_URL}${path}`} />
-      <link rel="alternate" hrefLang="de" href={`${BASE_URL}${path}`} />
-      <link rel="alternate" hrefLang="es" href={`${BASE_URL}${path}`} />
-      <link rel="alternate" hrefLang="pt" href={`${BASE_URL}${path}`} />
-      <link rel="alternate" hrefLang="ru" href={`${BASE_URL}${path}`} />
-      <link rel="alternate" hrefLang="vi" href={`${BASE_URL}${path}`} />
-      <link rel="alternate" hrefLang="ar" href={`${BASE_URL}${path}`} />
-      <link rel="alternate" hrefLang="x-default" href={`${BASE_URL}${path}`} />
-
       {/* Structured data (JSON‑LD) */}
       {jsonLd.map((data, idx) => (
         <script key={idx} type="application/ld+json">

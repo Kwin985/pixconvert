@@ -75,7 +75,8 @@
         "title": "Batch Processing + Live Preview",
         "desc": "Process hundreds of images simultaneously with real-time preview and slider comparison to visually see the conversion results."
       }
-    ]
+    ],
+    "popularTitle": "Popular Conversions"
   },
   "converter": {
     "upload": {
