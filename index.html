@@ -2,6 +2,22 @@
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
+    <!-- Anti-wrong-language flash: prerendered HTML is English; for non-English
+         visitors hide the body until i18n applies the detected language -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('pixconvert-lang');
+          var lang = stored || navigator.language || 'en';
+          if (lang && lang.toLowerCase().indexOf('en') !== 0) {
+            document.documentElement.setAttribute('data-i18n-pending', '1');
+            var css = document.createElement('style');
+            css.textContent = '[data-i18n-pending] body{visibility:hidden}';
+            document.head.appendChild(css);
+          }
+        } catch (e) { /* private mode etc. - show default */ }
+      })();
+    </script>
 	<meta name="naver-site-verification" content="bddc7e31f3f0cfddb95c1ae375cd44a624a2ed20" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
