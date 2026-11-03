@@ -10,15 +10,46 @@ import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'no
 import { dirname, extname, join, normalize } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import puppeteer from 'puppeteer-core';
+import { Browser, BrowserPlatform, install, resolveBuildId, detectBrowserPlatform } from '@puppeteer/browsers';
 
 const DIST = fileURLToPath(new URL('../dist', import.meta.url));
 
 const CHROME_CANDIDATES = [
+  // Windows
   'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
   'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
   'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe',
   'C:\\Program Files\\Microsoft\\Edge\\Application\\msedge.exe',
+  // Linux (e.g. Cloudflare Pages Ubuntu 22.04 build image)
+  '/usr/bin/google-chrome',
+  '/usr/bin/google-chrome-stable',
+  '/usr/bin/chromium-browser',
+  '/usr/bin/chromium',
+  '/snap/bin/chromium',
+  '/usr/bin/microsoft-edge',
+  '/usr/bin/microsoft-edge-stable',
 ];
+
+function findBrowser() {
+  for (const p of CHROME_CANDIDATES) {
+    if (existsSync(p)) return p;
+  }
+  return null;
+}
+
+/** Download chrome-headless-shell as a fallback when no system browser exists. */
+async function downloadHeadlessShell() {
+  const platform = detectBrowserPlatform();
+  const buildId = await resolveBuildId(Browser.CHROMEHEADLESSSHELL, platform, 'stable');
+  const cacheDir = join(DIST, '.chrome-cache');
+  console.log(`No system browser found - downloading chrome-headless-shell ${buildId}...`);
+  const result = await install({
+    browser: Browser.CHROMEHEADLESSSHELL,
+    buildId,
+    cacheDir,
+  });
+  return result.executablePath;
+}
 
 const ROUTES = [
   '/',
@@ -57,13 +88,6 @@ const MIME = {
   '.xml': 'application/xml',
   '.exe': 'application/octet-stream',
 };
-
-function findBrowser() {
-  for (const p of CHROME_CANDIDATES) {
-    if (existsSync(p)) return p;
-  }
-  throw new Error('No local Chrome/Edge found for prerendering');
-}
 
 function startStaticServer() {
   const server = createServer((req, res) => {
@@ -131,13 +155,23 @@ async function main() {
     console.error('dist/index.html not found - run "vite build" first');
     process.exit(1);
   }
-  const browserPath = findBrowser();
+  let browserPath = findBrowser();
+  let headlessMode = 'new';
+  if (!browserPath) {
+    try {
+      browserPath = await downloadHeadlessShell();
+      headlessMode = 'shell';
+    } catch (err) {
+      console.warn(`WARNING: no browser available for prerendering (${err.message}). Skipping prerender.`);
+      process.exit(0); // soft-fail so the deploy still succeeds with CSR fallback
+    }
+  }
   const { server, port } = await startStaticServer();
   const base = `http://127.0.0.1:${port}`;
 
   const browser = await puppeteer.launch({
     executablePath: browserPath,
-    headless: 'new',
+    headless: headlessMode,
     args: ['--no-sandbox', '--disable-gpu', '--disable-dev-shm-usage', '--lang=en-US'],
   });
   const page = await browser.newPage();
