@@ -15,9 +15,9 @@
     </image:image>
   </url>
 
-  <!-- Format hub pages -->
+  <!-- Format hub pages (trailing-slash canonical to match Cloudflare Pages serving) -->
   <url>
-    <loc>https://pixconvert.cn/to-webp</loc>
+    <loc>https://pixconvert.cn/to-webp/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -28,7 +28,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://pixconvert.cn/to-avif</loc>
+    <loc>https://pixconvert.cn/to-avif/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -39,7 +39,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://pixconvert.cn/to-jpg</loc>
+    <loc>https://pixconvert.cn/to-jpg/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -50,7 +50,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://pixconvert.cn/to-png</loc>
+    <loc>https://pixconvert.cn/to-png/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -61,7 +61,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://pixconvert.cn/to-svg</loc>
+    <loc>https://pixconvert.cn/to-svg/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -72,9 +72,9 @@
     </image:image>
   </url>
 
-  <!-- Conversion pair landing pages -->
+  <!-- Conversion pair landing pages (trailing-slash canonical) -->
   <url>
-    <loc>https://pixconvert.cn/jpg-to-webp</loc>
+    <loc>https://pixconvert.cn/jpg-to-webp/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -85,7 +85,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://pixconvert.cn/png-to-webp</loc>
+    <loc>https://pixconvert.cn/png-to-webp/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -96,7 +96,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://pixconvert.cn/webp-to-jpg</loc>
+    <loc>https://pixconvert.cn/webp-to-jpg/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -107,7 +107,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://pixconvert.cn/webp-to-png</loc>
+    <loc>https://pixconvert.cn/webp-to-png/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -118,7 +118,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://pixconvert.cn/jpg-to-avif</loc>
+    <loc>https://pixconvert.cn/jpg-to-avif/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -129,7 +129,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://pixconvert.cn/png-to-avif</loc>
+    <loc>https://pixconvert.cn/png-to-avif/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -140,7 +140,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://pixconvert.cn/avif-to-jpg</loc>
+    <loc>https://pixconvert.cn/avif-to-jpg/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -151,7 +151,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://pixconvert.cn/avif-to-png</loc>
+    <loc>https://pixconvert.cn/avif-to-png/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -162,7 +162,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://pixconvert.cn/jpg-to-png</loc>
+    <loc>https://pixconvert.cn/jpg-to-png/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -173,7 +173,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://pixconvert.cn/png-to-jpg</loc>
+    <loc>https://pixconvert.cn/png-to-jpg/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -184,15 +184,15 @@
     </image:image>
   </url>
 
-  <!-- Other pages -->
+  <!-- Other pages (trailing-slash canonical) -->
   <url>
-    <loc>https://pixconvert.cn/compare</loc>
+    <loc>https://pixconvert.cn/compare/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pixconvert.cn/faq</loc>
+    <loc>https://pixconvert.cn/faq/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

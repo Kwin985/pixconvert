@@ -18,11 +18,33 @@ export interface SEOProps {
 const BASE_URL = 'https://pixconvert.cn';
 const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.png`;
 
+/**
+ * Canonical URL normalizer.
+ *
+ * Cloudflare Pages serves static directory routes at the trailing‑slash form
+ * (`/to-webp/`) and 308‑redirects the bare form (`/to-webp`). If a page's
+ * canonical/og:url points at the bare (redirecting) form, Google Search Console
+ * flags it as "Redirect error" ("canonical is a redirect"). To avoid that we
+ * normalize every non‑root internal URL to its trailing‑slash form, which is the
+ * URL that actually returns HTTP 200.
+ */
+function toCanonicalUrl(input: string): string {
+  if (input.startsWith('http://') || input.startsWith('https://')) {
+    const u = new URL(input);
+    if (u.pathname === '/' || u.pathname === '') return `${u.origin}/`;
+    const p = u.pathname.endsWith('/') ? u.pathname : `${u.pathname}/`;
+    return `${u.origin}${p}`;
+  }
+  let p = input.startsWith('/') ? input : `/${input}`;
+  if (p === '/') return `${BASE_URL}/`;
+  return `${BASE_URL}${p.endsWith('/') ? p : `${p}/`}`;
+}
+
 /** Single entry point for all pages – one `<Helmet>` call per route. */
 export default function SEO({ title, description, path = '/', structuredData, noIndex, lang, image }: SEOProps) {
   const { i18n } = useTranslation();
   const currentLang = lang || i18n.language?.split('-')[0] || 'en';
-  const url = `${BASE_URL}${path}`;
+  const url = toCanonicalUrl(path);
   const dir = currentLang === 'ar' ? 'rtl' : 'ltr';
   const ogImage = image || DEFAULT_OG_IMAGE;
 
@@ -137,7 +159,7 @@ export function breadcrumbSchema(items: { name: string; url: string }[]) {
       '@type': 'ListItem',
       position: idx + 1,
       name: item.name,
-      item: item.url,
+      item: toCanonicalUrl(item.url),
     })),
   };
 }
@@ -225,7 +247,7 @@ export function articleSchema(headline: string, description: string, path: strin
     '@type': 'Article',
     headline,
     description,
-    url: `${BASE_URL}${path}`,
+    url: toCanonicalUrl(path),
     author: {
       '@type': 'Organization',
       name: 'PixConvert',
@@ -242,7 +264,7 @@ export function articleSchema(headline: string, description: string, path: strin
     dateModified: '2026-07-12',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `${BASE_URL}${path}`,
+      '@id': toCanonicalUrl(path),
     },
   };
 }
@@ -252,7 +274,7 @@ export function imageObjectSchema(caption: string, path: string) {
   return {
     '@context': 'https://schema.org',
     '@type': 'ImageObject',
-    url: `${BASE_URL}${path}`,
+    url: toCanonicalUrl(path),
     caption,
     width: 1200,
     height: 630,
