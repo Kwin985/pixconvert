@@ -60,6 +60,13 @@ export default function SEO({ title, description, path = '/', structuredData, no
       <meta name="description" content={description} />
       <link rel="canonical" href={url} />
 
+      {/* Baidu webmaster verification (meta-tag method).
+          The file method (baidu_verify_*.html at root) fails because Cloudflare
+          Pages "Pretty URLs" 308-redirects /x.html -> /x, which Baidu's verifier
+          does not follow. The homepage is served at / with HTTP 200, so the
+          meta tag is the reliable verification path. */}
+      <meta name="baidu-site-verification" content="codeva-VhZ4EHfV3g" />
+
       {/* Robots */}
       {noIndex ? (
         <meta name="robots" content="noindex, follow" />
