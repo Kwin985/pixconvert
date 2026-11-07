@@ -1,1 +1,5 @@
+# 把所有 www 流量 301 跳转到主域（apex），避免 Bing/Google 把 www 当第二个站点重复抓取
+https://www.pixconvert.cn/*    https://pixconvert.cn/:splat    301
+
+# SPA 兜底：未知路径回退到 index.html（Cloudflare Pages 按首条匹配生效）
 /*    /index.html   200
