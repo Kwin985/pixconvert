@@ -67,6 +67,12 @@ export default function SEO({ title, description, path = '/', structuredData, no
           meta tag is the reliable verification path. */}
       <meta name="baidu-site-verification" content="codeva-VhZ4EHfV3g" />
 
+      {/* Toutiao / Doubao (ByteDance) webmaster verification (meta-tag method).
+          Covers both Toutiao Search and Doubao AI search, which share the
+          Bytespider index. File verification is avoided for the same reason as
+          Baidu: Cloudflare Pages "Pretty URLs" 308-redirects /x.html -> /x. */}
+      <meta name="bytedance-verification-code" content="p+OvpieFGNOBIm4CI/c5" />
+
       {/* Robots */}
       {noIndex ? (
         <meta name="robots" content="noindex, follow" />
